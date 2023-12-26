@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
     // Đường dẫn tới tệp JSON chứa thông tin sản phẩm
-    const jsonFilePath = "Thongtinsp.json";
-
+    const jsonFilePath = "/json/Thongtinsanpham.json";
+    
     // Lấy thông tin sản phẩm từ tệp JSON
     fetch(jsonFilePath)
         .then(response => response.json())
@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 productItem.className = 'col-lg-3 col-md-6 col-sm-6';
                 productItem.innerHTML = `
                     <div class="product__item">
-                        <div class="product__item__pic set-bg" data-setbg="${product.image}">
+                        <div class="product__item__pic set-bg" style="background: url(${product.image})">
                             <div class="product__label">
                                 <span>${product.label}</span>
                             </div>

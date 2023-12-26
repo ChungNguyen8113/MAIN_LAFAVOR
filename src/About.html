@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>La Favor</title>
+        <title>About</title>
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="../img/hinh/favicon_io/favicon.ico"/>
 
@@ -41,7 +41,57 @@
 <body data-target=".navbar">
     <!-- Header Section Begin -->
     <header>
-        <div id="header"></div>
+        <!-- Offcanvas Menu Begin -->
+        <div class="container text-center header-font">
+            <span class="bicolor bi bi-geo-alt "></span> 02 Quốc lộ 1A, Phường Linh Xuân &nbsp; <span class="bicolor bi bi-telephone "></span> Đặt hàng: 1800.1000
+        </div>
+        <!-- Offcanvas Menu End -->  
+        <nav class="navbar navbar-expand-lg navbar-fixed-top">
+            <div class="container">
+                <a class="nav-link active navbar-brand" aria-current="page" href="../index.html">
+                    <img src="../img/hinh/logo/logo.png" alt="Logo"  class="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="nav navbar-nav ms-auto mx-lg-5 py-0">
+                        <li class="nav-item dropdown nav-item-padding" id="menu">
+                            <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Menu</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="Product-Banhquy.html">Bánh Quy</a></li>
+                                <li><a class="dropdown-item" href="Product-Banhmy.html">Bánh Mỳ</a></li>
+                                <li><a class="dropdown-item" href="Product-Banhtheomua.html">Bánh Theo Mùa</a></li>
+                                <li><a class="dropdown-item" href="Product-Banhcombo.html">Combo</a></li>
+                                <li><a class="dropdown-item" href="Product-Banhkhac.html">Sản Phẩm Khác</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item nav-item-padding" id="blog"><a class="nav-link" href="Blog.html">Blog</a></li>
+                        <li class="nav-item nav-item-padding" id="about"><a class="nav-link" href="About.html">Về chúng tôi</a></li>
+                        <li class="nav-item nav-item-padding" id="contact"><a class="nav-link" href="Contact.html">Liên hệ</a></li>
+                    </ul>  
+                    <ul class="nav navbar-nav d-flex ms-auto">                   
+                        <li class="nav-item">
+                            <a class="nav-link" href="Cart.html" id="cart-count-info">
+                                <span class="bi bi-cart"></span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Account.html" id="userName">
+                                <span class="bi bi-person"></span>
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" id="navbarform" href="#" role="button" data-bs-toggle="dropdown" 
+                            aria-expanded="false"><span class="bi bi-search"></span></a>
+                            <form class="dropdown-menu" aria-labelledby="navbarform">
+                                <input class="form-control me-2 searchbar" type="text" placeholder="Search">
+                            </form>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header> <br/>
     <!-- Header Section End -->
 
@@ -94,7 +144,6 @@
 <!--Script Begin-->
 <script>
     $(function() {
-        $('#header').load('Header.html');
         $('#footer').load('Footer.html');
 
     });
