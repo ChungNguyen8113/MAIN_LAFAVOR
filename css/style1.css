@@ -4,6 +4,7 @@
 }
 .header-font {
     font-family: inter;
+    font-size:medium;
 }
 .logo{
     width: 120px;
@@ -92,28 +93,6 @@ Hero
 .hero__slider.owl-carousel .owl-item.active .hero__text h2 {
   top: 0;
   opacity: 1;
-}
-.hero__slider.owl-carousel .owl-item.active .hero__text .primary-btn {
-  top: 0;
-  opacity: 1;
-}
-.hero__slider.owl-carousel .owl-nav button {
-  height: 50px;
-  width: 50px;
-  background: rgba(17, 17, 17, 0.5);
-  border-radius: 50%;
-  color: #ffffff;
-  font-size: 26px;
-  line-height: 50px;
-  text-align: center;
-  position: absolute;
-  left: 30px;
-  top: 50%;
-  margin-top: -15px;
-}
-.hero__slider.owl-carousel .owl-nav button.owl-next {
-  left: auto;
-  right: 30px;
 }
 
 
