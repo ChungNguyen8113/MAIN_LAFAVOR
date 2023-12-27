@@ -55,45 +55,6 @@
   letter-spacing: 2px;
   padding: 14px 30px;
 }
-/*---------------------
-Hero 
------------------------*/
-.hero__item {
-  height: 700px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  justify-items: center;
-}
-
-.hero__text {
-  text-align: center;
-}
-.hero__text:after {
-  position: absolute;
-  left: 15px;
-  top: 15px;
-  height: calc(100% - 30px);
-  width: calc(100% - 30px);
-  content: "";
-  opacity: 0.3;
-}
-.hero__text .primary-btn {
-  position: relative;
-  top: 100px;
-  opacity: 0;
-  -webkit-transition: all, 0.6s;
-  -o-transition: all, 0.6s;
-  transition: all, 0.6s;
-}
-
-.hero__slider.owl-carousel .owl-item.active .hero__text h2 {
-  top: 0;
-  opacity: 1;
-}
 
 
 /* Thêm mới*/
