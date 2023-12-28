@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Admin</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="/img/hinh/favicon_io/favicon.ico"/>
+        <!--Google Font-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;500;700&display=swap" rel="stylesheet">
+
+        <!-- Bootstrap icons-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link rel="stylesheet" href="../css/style1.css" type="text/css">
+        <link rel="stylesheet" href="../css/styleLogin.css" type="text/css">
+
+        <!--Script-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <style>
+        .my-account-tab-menu.nav-tabs .nav-link.active,
+        .my-account-tab-menu.nav-tabs .nav-link:hover {
+            background-color: #f08632;
+            border-color: #ff6565;
+            color: #fff;
+        }
+        
+        .nav-link {
+            display: block;
+            width: 100%;
+            padding: .5rem 1rem;
+        }
+        
+        .my-account-tab-menu.nav-tabs .nav-link {
+            background-color: transparent;
+            border: 1px solid #e5e5e5;
+            border-bottom: none;
+            border-radius: 0;
+            color: #000;
+            font-size: 15px;
+            font-weight: 500;
+            display: block;
+            padding: 30px 15px;
+            text-align: left;
+            text-transform: capitalize;
+        }
+        
+        .nav-tabs .nav-link:focus,
+        .nav-tabs .nav-link:hover {
+            border-color: #e9ecef #e9ecef #dee2e6;
+            isolation: isolate;
+        }
+        
+        .nav-tabs .nav-link {
+            margin-bottom: -1px;
+            background: none;
+            border: 1px solid transparent;
+            border-top-left-radius: .25rem;
+            border-top-right-radius: .25rem;
+        }
+        
+        .nav-link:focus,
+        .nav-link:hover {
+            color: #9c6977;
+        }
+        
+        [type=button]:not(:disabled),
+        [type=reset]:not(:disabled),
+        [type=submit]:not(:disabled),
+        button:not(:disabled) {
+            cursor: pointer;
+        }
+        
+        .page-header-title {
+            font-size: 30px;
+            font-weight: 700;
+            color: #000;
+            margin-top: 20px;
+            text-align: left;
+            margin-bottom: 30px;
+        }
+        
+        #AccountName {
+            font-size: 20px;
+            font-weight: 300;
+            color: #000;
+            margin-top: 20px;
+            text-align: left;
+            margin-bottom: 30px;
+        }
+        
+        .rounded-circle {
+            width: 300px;
+            height: 300px;
+        }
+        
+        .profile .profile-card img {
+            object-fit: cover;
+            border-radius: 50%;
+        }
+        
+        .profile-overview .row div {
+            margin-bottom: 20px;
+            font-size: medium;
+        }
+        
+        .profile {
+            margin-top: 40px;
+        }
+        
+        .profile .profile-card {
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        
+        .single-input-item input {
+            margin-left: 10px;
+        }
+        
+        .single-input-item label {
+            width: 150px;
+        }
+        
+        button {
+            background-color: #850026;
+            color: #fff;
+            border-color: #850026;
+        }
+        
+        .info .row div {
+            margin-bottom: 20px;
+            font-size: medium;
+        }
+        
+        legend {
+            margin-top: 40px;
+            margin-bottom: 20px;
+        }
+        
+        .tab-pane h3 {
+            margin-bottom: 30px;
+        }
+        
+        .single-input-item {
+            margin-top: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Header Section Begin -->
+    <header>
+        <div id="header"></div>
+    </header>
+
+    <main class="main-content">
+
+        <!--== Start Page Header Area Wrapper ==-->
+        <section class="page-header-area pt-10 pb-9" data-bg-color="#FFF3DA">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-5">
+                        <div class="page-header-st3-content text-center text-md-start">
+
+                            <h2 class="page-header-title">Tài khoản của tôi</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--== End Page Header Area Wrapper ==-->
+
+        <!--== Start My Account Area Wrapper ==-->
+        <section class="my-account-area section-space">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-4">
+                        <div class="my-account-tab-menu nav nav-tabs" id="nav-tab" role="tablist">
+                            <button class="nav-link active" id="dashboad-tab" data-bs-toggle="tab" data-bs-target="#dashboad" type="button" role="tab" aria-controls="dashboad" aria-selected="true" onclick="openTab(event, 'dashboad')">Thông tin</button>
+                            <button class="nav-link" id="orders-tab" data-bs-toggle="tab" data-bs-target="#orders" type="button" role="tab" aria-controls="orders" aria-selected="false" onclick="openTab(event, 'orders')"> Đơn hàng</button>
+                            <button class="nav-link" id="download-tab" data-bs-toggle="tab" data-bs-target="#download" type="button" role="tab" aria-controls="download" aria-selected="false" onclick="openTab(event, 'download')">Yêu thích</button>
+                            <button class="nav-link" id="payment-method-tab" data-bs-toggle="tab" data-bs-target="#payment-method" type="button" role="tab" aria-controls="payment-method" aria-selected="false" onclick="openTab(event, 'payment-method')">Phương thức thanh
+                                toán</button>
+                            <button class="nav-link" id="address-edit-tab" data-bs-toggle="tab" data-bs-target="#address-edit" type="button" role="tab" aria-controls="address-edit" aria-selected="false" onclick="openTab(event,'address-edit')">Địa chỉ</button>
+                            <button class="nav-link" id="account-info-tab" data-bs-toggle="tab" data-bs-target="#account-info" type="button" role="tab" aria-controls="account-info" aria-selected="false" onclick="openTab(event,'account-info')">Cài đặt tài khoản</button>
+                            <button class="nav-link" id="logout" type="button">Đăng xuất</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-9 col-md-8">
+                        <div class="tab-content" id="nav-tabContent">
+                            <div class="tab-pane show" id="dashboad" role="tabpanel" aria-labelledby="dashboad-tab">
+                                <div class="myaccount-content">
+                                    <h3>Thông tin tài khoản</h3>
+                                    <section class="section profile">
+                                        <div class="row">
+                                            <div class="col-xl-6">
+                                                <div class="card">
+                                                    <div class="card-body profile-card pt-4 d-flex flex-column align-items-center">
+                                                        <img src="https://images.unsplash.com/photo-1440589473619-3cde28941638?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" alt="Profile" class="rounded-circle">
+                                                        <h3 class="AccountName"></h3>
+                                                        <div class="social-links mt-2">
+                                                            <a href="#" class="twitter"><i
+                                                                    class="bi bi-twitter"></i></a>
+                                                            <a href="#" class="facebook"><i
+                                                                    class="bi bi-facebook"></i></a>
+                                                            <a href="#" class="instagram"><i
+                                                                    class="bi bi-instagram"></i></a>
+                                                            <a href="#" class="linkedin"><i
+                                                                    class="bi bi-linkedin"></i></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div class="col-xl-6 info">
+
+                                                <div>
+
+                                                    <div class="row">
+                                                        <div class="col-lg-3 col-md-4 label">Tên</div>
+                                                        <div class="col-lg-9 col-md-8 AccountName">Kevin Anderson</div>
+                                                    </div>
+
+                                                    <div class="row">
+                                                        <div class="col-lg-3 col-md-4 label">Địa chỉ</div>
+                                                        <div class="col-lg-9 col-md-8">Tô Vĩnh Diện, Đông Hoà, Dĩ An, Bình Dương</div>
+                                                    </div>
+
+                                                    <div class="row">
+                                                        <div class="col-lg-3 col-md-4 label">Số điện thoại</div>
+                                                        <div class="col-lg-9 col-md-8">(84) 486-3538 x29071</div>
+                                                    </div>
+
+                                                    <div class="row">
+                                                        <div class="col-lg-3 col-md-4 label">Email</div>
+                                                        <div class="col-lg-9 col-md-8 "><span class="AccountName"></span><span>@gmail.com</span></div>
+                                                    </div>
+
+                                                </div>
+
+                                                <!-- End Bordered Tabs -->
+
+                                            </div>
+                                        </div>
+                                    </section>
+
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="orders" role="tabpanel" aria-labelledby="orders-tab">
+                                <div class="myaccount-content">
+                                    <h3>Orders</h3>
+                                    <div class="myaccount-table table-responsive text-center">
+                                        <table class="table table-bordered">
+                                            <thead class="thead-light">
+                                                <tr>
+                                                    <th>Mã đơn hàng</th>
+                                                    <th>Ngày</th>
+                                                    <th>Tình trạng</th>
+                                                    <th>Tổng tiền</th>
+                                                    <th>Xem</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>DH11783H</td>
+                                                    <td>23/12/2022</td>
+                                                    <td>Đang chuẩn bị</td>
+                                                    <td>1.253.000đ</td>
+                                                    <td><a href="shop-cart.html" class="check-btn sqr-btn ">View</a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>DH11783H</td>
+                                                    <td>20/12/2022</td>
+                                                    <td>Đang giao</td>
+                                                    <td>800.000đ</td>
+                                                    <td><a href="shop-cart.html" class="check-btn sqr-btn ">View</a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>DH11783H</td>
+                                                    <td>23/12/2022</td>
+                                                    <td>Đã giao</td>
+                                                    <td>2.503.000đ</td>
+                                                    <td><a href="shop-cart.html" class="check-btn sqr-btn ">View</a>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="download" role="tabpanel" aria-labelledby="download-tab">
+                                <div class="myaccount-content">
+                                    <h3>Yêu thích</h3>
+                                    <div class="myaccount-table table-responsive text-center">
+
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <th>Sản phẩm</th>
+                                                    <th>Giá</th>
+                                                </tr>
+
+                                            </thead>
+                                            <tbody id="wishlist">
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="payment-method" role="tabpanel" aria-labelledby="payment-method-tab">
+                                <div class="myaccount-content">
+                                    <h3>Phương thức thanh toán</h3>
+                                    <p>Bạn chưa lưu phương thức thanh toán nào!</p>
+
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="address-edit" role="tabpanel" aria-labelledby="address-edit-tab">
+                                <div class="myaccount-content">
+                                    <h3>Địa chỉ giao hàng</h3>
+                                    <address>
+                                        <p><strong class="AccountName"></strong></p>
+                                        <p>Địa chỉ: Tô Vĩnh Diện, Đông Hoà, Dĩ An, Bình Dương <br>
+                                        <p>Số điện thoại: (123) 456-7890</p>
+                                    </address>
+                                    <a href="#/" class="check-btn sqr-btn"><i class="fa fa-edit"></i> Edit Address</a>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="account-info" role="tabpanel" aria-labelledby="account-info-tab">
+                                <div class="myaccount-content">
+                                    <h3>Cập nhật thông tin</h3>
+                                    <div class="account-details-form">
+                                        <form action="#">
+                                            <div class="row">
+                                                <div class="col-lg-6">
+                                                    <div class="single-input-item">
+                                                        <label for="last-name" class="required">Tên</label>
+                                                        <input type="text" id="last-name" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="single-input-item">
+                                                <label for="display-name" class="required">Tên hiển thị</label>
+                                                <input type="text" id="display-name" />
+                                            </div>
+                                            <div class="single-input-item">
+                                                <label for="email" class="required">Email</label>
+                                                <input type="email" id="email" />
+                                            </div>
+                                            <fieldset>
+                                                <legend>Đổi mật khẩu</legend>
+                                                <div class="single-input-item">
+                                                    <label for="current-pwd" class="required">Mật khẩu hiện tại</label>
+                                                    <input type="password" id="current-pwd" />
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-lg-6">
+                                                        <div class="single-input-item">
+                                                            <label for="new-pwd" class="required">Mật khẩu mới</label>
+                                                            <input type="password" id="new-pwd" />
+                                                        </div>
+                                                        <div class="single-input-item">
+                                                            <label for="confirm-pwd" class="required">Xác nhận</label>
+                                                            <input type="password" id="confirm-pwd" />
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </fieldset>
+                                            <div class="single-input-item">
+                                                <button class="check-btn sqr-btn">Lưu</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--== End My Account Area Wrapper ==-->
+
+    </main>
+
+    <!-- Footer Section Begin -->
+    <footer class="footer">
+        <div id="footer"></div>
+    </footer>
+    <!-- Footer Section End -->
+
+    <!-- Js Plugins -->
+    <script src="../js/jquery-3.3.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/jquery.nice-select.min.js"></script>
+    <script src="../js/jquery.nicescroll.min.js"></script>
+    <script src="../js/jquery.magnific-popup.min.js"></script>
+    <script src="../js/jquery.countdown.min.js"></script>
+    <script src="../js/jquery.slicknav.js"></script>
+    <script src="../js/mixitup.min.js"></script>
+    <script src="../js/owl.carousel.min.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+   <!--
+    <script>
+        $(document).ready(function() {
+            var user = localStorage.getItem('account');
+            if (user != null) {
+                document.getElementById('dashboad').style.display = 'block';
+                var ele = document.getElementsByClassName('AccountName')
+                for (i = 0; i < ele.length; i++) {
+                    ele[i].innerHTML = user;
+                }
+            } else {
+                location.href = "user.html";
+            }
+        })
+        var cartTable = document.querySelector('#wishlist');
+        console.log(cartTable)
+        let item = ''
+            // const item = localStorage.getItem('product')
+
+        var cartItems = JSON.parse(localStorage.getItem('cart'))
+        for (let i = 0; i < cartItems.length; i++) {
+
+            item += '<tr class="item product__wishlist__item"><td class="product__wishlist__item"><div class="product__cart__item__pic"><img src="../img/product/' + cartItems[i].prImage + '" alt=""></div><div class="product__cart__item__text"><h6 class="title">' + cartItems[i].prName + '</h6></td><td><h5 class="productTotal">' + cartItems[i].prPrice + '</h5></div></td></tr>'
+        }
+        var currentHtml = cartTable.innerHTML;
+        currentHtml += item
+        cartTable.innerHTML = currentHtml
+    </script>
+    <script>
+        function openTab(evt, tabName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tab-pane");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("nav-link");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(tabName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+    </script>-->
+    <!-- <script> //Origin unread
+        const btnTabItem = document.querySelectorAll(".nav-link");
+        btnTabItem.forEach((btn) => {
+            btn.addEventListener("click", function() {
+                btnTabItem.forEach((btn) => {
+                    btn.classList.remove("active");
+                });
+                this.classList.add("active");
+            });
+        });
+    </script> -->
+    <!--<script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js"; import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-analytics.js"; import { getDatabase, set, ref } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-database.js";
+        import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, updateProfile } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-auth.js"; const firebaseConfig = { apiKey: "AIzaSyAIwU6gd89NJnFH0sAJGzE1XwCv9wGPQXQ", authDomain:
+        "freshie-uel.firebaseapp.com", databaseURL: "https://freshie-uel-default-rtdb.firebaseio.com", projectId: "freshie-uel", storageBucket: "freshie-uel.appspot.com", messagingSenderId: "665183320448", appId: "1:665183320448:web:d35d7291577c7276d12965",
+        measurementId: "G-N5D0L2ST2N" }; const app = initializeApp(firebaseConfig); const analytics = getAnalytics(app); const database = getDatabase(app); const auth = getAuth(app); logout.addEventListener('click', (e) => { alert("Đã đăng xuất"), auth.signOut();
+        localStorage.removeItem('account'); localStorage.removeItem('cart'); window.location.href = "user.html"; })
+
+
+
+
+    </script>-->
+
+
+</body>
+
+</html>
