@@ -833,10 +833,12 @@ margin-top: -10px;
     margin-right: 0;
   }
   .blog__details__content h2{
-    position: relative;
-    color:#E09132;
-    text-align: center;
-    margin-top: 30px;
+      margin-top: 50px;
+      font-family: "Playfair Display", serif;
+      color: #f08632;
+      font-style: italic;
+      margin-bottom: 10px;
+      font-size: 40px;
   }
 
   .blog__details__content h6 {
