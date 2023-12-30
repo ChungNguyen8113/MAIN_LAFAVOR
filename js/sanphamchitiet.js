@@ -51,7 +51,7 @@ document.addEventListener("DOMContentLoaded", function () {
                         </div> 
                     </div>
                         <div class="product__details__btn">
-                            <a href="#" class="shop_btn" onclick="themvaogiohang(this)">Thêm vào giỏ</a>
+                            <a href="#" class="shop_btn" onclick="themVaoGioHang()">Thêm vào giỏ</a>
                             <a href="#" class="shop_btn">Đặt hàng ngay</a>
                         </div>
                         
@@ -125,3 +125,68 @@ function updateColor() {
         }
     });
 }
+
+
+
+// Thêm một biến global để theo dõi số lượng giỏ hàng
+let cartQuantity = 0;
+
+document.addEventListener("DOMContentLoaded", function () {
+    // ... Mã hiện tại ...
+
+    // Chức năng thêm vào giỏ hàng
+    function themVaoGioHang() {
+        // Lấy thông tin sản phẩm từ trang chi tiết sản phẩm
+        const productName = productDetail.name;
+        const productSize = document.querySelector('.options_size .selected')?.value || 'Chưa chọn size';
+        const productToppings = Array.from(document.querySelectorAll('.options_topping .selected')).map(topping => topping.value).join(', ');
+        const quantity = parseInt(document.getElementById('num').value);
+
+        // Tạo đối tượng mô tả sản phẩm
+        const cartItem = {
+            name: productName,
+            size: productSize,
+            toppings: productToppings,
+            quantity: quantity
+        };
+
+        // Lấy thông tin giỏ hàng từ Local Storage (nếu có)
+        let cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+
+        // Kiểm tra xem sản phẩm đã có trong giỏ hàng chưa
+        const existingItemIndex = cartItems.findIndex(item => item.name === productName && item.size === productSize && item.toppings === productToppings);
+
+        if (existingItemIndex !== -1) {
+            // Nếu sản phẩm đã có trong giỏ hàng, tăng số lượng
+            cartItems[existingItemIndex].quantity += quantity;
+        } else {
+            // Nếu sản phẩm chưa có trong giỏ hàng, thêm mới
+            cartItems.push(cartItem);
+        }
+
+        // Lưu thông tin giỏ hàng vào Local Storage
+        localStorage.setItem('cartItems', JSON.stringify(cartItems));
+
+        // Cập nhật số lượng giỏ hàng
+        cartQuantity += quantity;
+        updateCartNumber();
+    }
+
+    // Gọi hàm capNhatSoLuongGioHang khi DOMContentLoaded để khởi tạo số lượng giỏ hàng
+    updateCartNumber();
+});
+
+// Cập nhật số lượng giỏ hàng trên icon giỏ hàng
+function updateCartNumber() {
+    const cartNumberElement = document.getElementById('cart-number');
+    if (cartNumberElement) {
+        cartNumberElement.innerText = cartQuantity.toString();
+    }
+}
+
+const addToCartButton = document.querySelector('.shop_btn');
+addToCartButton.addEventListener('click', function (event) {
+    event.preventDefault();
+    themVaoGioHang();
+});
+

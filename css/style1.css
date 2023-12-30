@@ -29,6 +29,21 @@
     padding-right: 40px;
 }
 
+#cart-number{
+  display:flex;
+  width:17px;
+  height: 17px;
+  background-color: red;
+  font-size: 9px;
+  justify-content: center;
+  align-items: center;
+  color:white;
+  border-radius: 50%;
+  position:absolute;
+  bottom:50%;
+  right: 150px;
+}
+
 /*Header*/
 
 /*Footer*/
@@ -859,3 +874,4 @@ margin-top: -10px;
   margin-right: 20px;
   text-decoration: none;
 }
+
