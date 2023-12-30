@@ -6,14 +6,16 @@
         "image": "/img/shop/Banhmi/white-bap.jpg",
         "label": "Bánh mì",
         "name": "White bap",
-        "price": "$25.00"
+        "price": "$25.00",
+        "description": "White Bap là một tác phẩm nghệ thuật ẩm thực, hấp dẫn với vị ngon và hương thơm đặc trưng. Với lớp vỏ mềm mịn, giòn tan và màu trắng tinh khôi, White Bap không chỉ là một bữa ăn ngon mắt mà còn làm hài lòng khẩu vị khó tính nhất.Những hạt hạt bột mịn màng tạo nên chiếc bánh mì trắng như tinh chất, đậm đà và thơm ngon. Bạn sẽ trải nghiệm được hương vị đặc trưng của bánh mì nước ngoài ngay từ lần đầu tiên thưởng thức.White Bap được chế biến từ những nguyên liệu chất lượng cao, đảm bảo an toàn và dinh dưỡng. Đây không chỉ là một loại bánh mì, mà là một tác phẩm nghệ thuật của đầu bếp chuyên nghiệp.'\n'Hãy để White Bap trở thành điểm nhấn đặc biệt trong bữa ăn của bạn. Sự kết hợp tinh tế giữa vị ngon, hương thơm và chất lượng đã làm nên tên tuổi cho loại bánh mì này. "
       },
       {
         "prid": "2",
         "image": "/img/shop/Banhmi/white-bun.jpg",
         "label": "Bánh mì",
         "name": "White bun",
-        "price": "$05.00"
+        "price": "$05.00",
+        "description": "White Bun là sự kết hợp hoàn hảo giữa vị béo của bột mỡ và sự giòn ngon của vỏ bánh mềm mịn. Với màu trắng tinh khôi và hương thơm dễ chịu, chiếc bánh này sẽ đưa bạn đến một hành trình vị giác đặc sắc. Lớp vỏ bánh mềm mịn như lụa, giữ lại hơi nước tạo nên độ giòn ngon đặc trưng. Bạn sẽ cảm nhận ngay từ lần đầu thưởng thức. Mỗi miếng bánh mì là một hòa quyện của hương vị ngọt ngào và vị béo của bột mỡ. White Bun không chỉ là một lựa chọn cho bữa sáng hoặc bữa trưa, mà còn là điểm nhấn thú vị trong các buổi tiệc và sự kiện. Được làm từ những nguyên liệu chất lượng, đảm bảo an toàn và dinh dưỡng, chiếc bánh này sẽ làm hài lòng mọi thực khách. White Bun mang đến trải nghiệm thú vị của sự kết hợp hài hòa giữa vị béo, giòn ngon và hương thơm tinh tế. Đến và khám phá hương vị đặc biệt của loại bánh mì này ngay hôm nay!"
       },
       {
         "prid": "3",
@@ -166,28 +168,28 @@
     ],
     "Banhtheomua": [
       {
-        "prid": "22",
+        "prid": "23",
         "image": "/img/shop/Banhquy/almond-salt-cookies.jpg",
         "label": "Bánh theo mùa",
         "name": "",
         "price": "$31.00"
       },
       {
-        "prid": "22",
+        "prid": "24",
         "image": "/img/shop/Banhquy/almond-salt-cookies.jpg",
         "label": "Bánh theo mùa",
         "name": "",
         "price": "$31.00"
       },
       {
-        "prid": "22",
+        "prid": "25",
         "image": "/img/shop/Banhquy/almond-salt-cookies.jpg",
         "label": "Bánh theo mùa",
         "name": "",
         "price": "$31.00"
       },
       {
-        "prid": "22",
+        "prid": "26",
         "image": "/img/shop/Banhquy/almond-salt-cookies.jpg",
         "label": "Bánh theo mùa",
         "name": "",

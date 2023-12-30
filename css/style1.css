@@ -91,14 +91,6 @@ Banner
     margin-top: 15px;
     color: black;
   }
-  .options_topping input:hover {
-    background-color: orange;
-    border:orange; 
-  }
-  .options_size input:hover {
-    background-color: orange;
-    border:orange; 
-  }
   .product__details__text h4 {
     color: #E5902D;
     font-weight: 600;
@@ -846,3 +838,24 @@ margin-top: -10px;
     margin-top: 30px;
     font-style: italic;
   }
+
+
+#productDetailContainer{
+  padding: 50px;
+}
+#productDetailContainer .product__details__big__img{
+  padding-top: 40px;
+}
+#productDetailContainer .shop_btn {
+  display: inline-block;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 14px 30px;
+  color: #ffffff;
+  background: #f08632;
+  margin-top: 15px;
+  margin-right: 20px;
+  text-decoration: none;
+}
