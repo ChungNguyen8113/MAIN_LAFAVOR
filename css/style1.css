@@ -855,8 +855,6 @@ margin-top: -10px;
     margin-top: 30px;
     font-style: italic;
   }
-
-<<<<<<< HEAD
   /* Định dạng phần tìm kiếm */
     .product__item {
         margin-bottom: 20px; /* Thêm khoảng cách giữa các sản phẩm */
@@ -867,7 +865,6 @@ margin-top: -10px;
         visibility: hidden; /* Ẩn sản phẩm mà không làm thay đổi bố trí */
         margin-bottom: 0; /* Không có khoảng trống cho sản phẩm ẩn */
     }
-=======
 
 #productDetailContainer{
   padding: 50px;
@@ -888,5 +885,3 @@ margin-top: -10px;
   margin-right: 20px;
   text-decoration: none;
 }
-
->>>>>>> 428f95f1b67666e667a45cdc34813722adced180

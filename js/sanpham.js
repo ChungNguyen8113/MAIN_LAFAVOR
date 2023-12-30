@@ -69,7 +69,24 @@ document.addEventListener("DOMContentLoaded", function () {
                             </div>
                         </div>
                     </div>
-                `;
+                `
+                // Thêm sự kiện click vào thẻ a chứa tên sản phẩm
+const productNameLink = productItem.querySelector('.product__item__text h6 a');
+productNameLink.addEventListener('click', () => {
+    redirectToProductDetail(product);
+});
+
+// ...
+
+// Hàm xử lý chuyển hướng đến trang chi tiết sản phẩm
+function redirectToProductDetail(product) {
+    // Lưu thông tin chi tiết sản phẩm vào local storage
+    localStorage.setItem("productDetail", JSON.stringify(product));
+
+    // Chuyển hướng đến trang chi tiết sản phẩm
+    location.href = "ProductDetail.html";
+}
+                ;
                 return productItem;
             }
 
