@@ -855,6 +855,10 @@ margin-top: -10px;
     margin-top: 30px;
     font-style: italic;
   }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 73583548a8a889f4d5b4c814a6e81f5644cb9fcb
   /* Định dạng phần tìm kiếm */
     .product__item {
         margin-bottom: 20px; /* Thêm khoảng cách giữa các sản phẩm */
@@ -865,6 +869,7 @@ margin-top: -10px;
         visibility: hidden; /* Ẩn sản phẩm mà không làm thay đổi bố trí */
         margin-bottom: 0; /* Không có khoảng trống cho sản phẩm ẩn */
     }
+<<<<<<< HEAD
 
 #productDetailContainer{
   padding: 50px;
@@ -885,3 +890,5 @@ margin-top: -10px;
   margin-right: 20px;
   text-decoration: none;
 }
+=======
+>>>>>>> 73583548a8a889f4d5b4c814a6e81f5644cb9fcb
