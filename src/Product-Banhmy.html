@@ -7,7 +7,7 @@
     <meta name="keywords" content="Cake, unica, creative, html">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Sản Phẩm Bánh Mì</title>
+    <title>Bánh mì</title>
     <!-- Favicon-->
     <link rel="icon" type="image/x-icon" href="/img/hinh/favicon_io/favicon.ico"/>
 
@@ -56,7 +56,7 @@
             <!-- Navigation-->
             <nav class="navbar navbar-expand-lg stick-top">
                 <div class="container">
-                    <a class="nav-link active navbar-brand" aria-current="page" href="#!">
+                    <a class="nav-link active navbar-brand" aria-current="page" href="/index.html">
                         <img src="/img/hinh/logo/logo.png" alt="Logo"  class="logo">
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -67,11 +67,11 @@
                             <li class="nav-item dropdown nav-item-padding">
                                 <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Menu</a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <li><a class="dropdown-item" href="/src/Product-Banhquy.html">Bánh Quy</a></li>
-                                    <li><a class="dropdown-item" href="/src/Product-Banhmy.html">Bánh Mỳ</a></li>
-                                    <li><a class="dropdown-item" href="/src/Product-Banhtheomua.html">Bánh Theo Mùa</a></li>
-                                    <li><a class="dropdown-item" href="/src/Product-Banhcombo.html">Combo</a></li>
-                                    <li><a class="dropdown-item" href="/src/Product-Banhkhac.html">Sản Phẩm Khác</a></li>
+                                    <li><a class="dropdown-item" href="Product-Banhquy.html">Bánh Quy</a></li>
+                                    <li><a class="dropdown-item" href="Product-Banhmy.html">Bánh Mỳ</a></li>
+                                    <li><a class="dropdown-item" href="Product-Banhtheomua.html">Bánh Theo Mùa</a></li>
+                                    <li><a class="dropdown-item" href="Product-Banhcombo.html">Combo</a></li>
+                                    <li><a class="dropdown-item" href="Product-Banhkhac.html">Sản Phẩm Khác</a></li>
                                 </ul>
                             </li>
                             <li class="nav-item nav-item-padding"><a class="nav-link" href="Blog.html">Blog</a></li>
@@ -109,32 +109,28 @@
                 <div class="categories__slider owl-carousel">
                     <div class="categories__item">
                         <div class="categories__item__icon">
-                            <span class="flaticon-029-cupcake-3"></span>
-                            <h5>Bánh mỳ</h5>
+                            <a href='/src/Product.html'><span class="flaticon-005-pancake"></span><h5>Tất cả</h5></a>
                         </div>
                     </div>
                     <div class="categories__item">
                         <div class="categories__item__icon">
-                            <span class="flaticon-034-chocolate-roll"></span>
-                            <h5>Bánh quy</h5>
+                            <a href='/src/Product-Banhmy.html'><span class="flaticon-034-chocolate-roll"></span><h5>Bánh mì</h5></a>
                         </div>
                     </div>
                     <div class="categories__item">
                         <div class="categories__item__icon">
-                            <span class="flaticon-005-pancake"></span>
-                            <h5>Bánh theo mùa</h5>
+                            <a href='/src/Product-Banhquy.html'><span class="flaticon-030-cupcake-2"></span><h5>Bánh quy</h5></a>
                         </div>
                     </div>
                     <div class="categories__item">
                         <div class="categories__item__icon">
-                            <span class="flaticon-030-cupcake-2"></span>
-                            <h5>Combo</h5>
+                            <a href='/src/Product-Banhtheomua.html'><span class="flaticon-005-pancake"></span><h5>Bánh theo mùa</h5></a>
                         </div>
                     </div>
+                    
                     <div class="categories__item">
                         <div class="categories__item__icon">
-                            <span class="flaticon-030-cupcake-2"></span>
-                            <h5>Sản phẩm khác</h5>
+                            <a href='/src/Product-Banhkhac.html'></a> <span class="flaticon-029-cupcake-3"></span><h5>Bánh khác</h5>
                         </div>
                     </div>
                 </div>
@@ -150,24 +146,21 @@
                 <div class="row">
                     <div class="col-lg-7 col-md-7">
                         <div class="shop__option__search">
-                            <form action="#">
-                                <input type="text" placeholder="Tìm kiếm">
+                            <form action="#" onsubmit="return false;">
+                                <input type="text" id="searchInput" placeholder="Tìm kiếm" style="margin-top: 0px" oninput="searchAndSort()">
                                 <button type="submit"><i class="fa fa-search"></i></button>
                             </form>
                         </div>
-                    </div>
+                    </div>    
                     <div class="col-lg-5 col-md-5">
                         <div class="shop__option__right">
-                            <select>
-                                <option value="">Default sorting</option>
-                                <option value="">A to Z</option>
-                                <option value="">1 - 8</option>
-                                <option value="">Name</option>
+                            <select id="sortOption" onchange="sortProducts()">
+                                <option value="default">Mặc định sắp xếp</option>
+                                <option value="price">Sắp xếp theo giá</option>
+                                <option value="name">Sắp xếp theo tên</option>
                             </select>
-                            <a href="#"><i class="fa fa-list"></i></a>
-                            <a href="#"><i class="fa fa-reorder"></i></a>
                         </div>
-                    </div>
+                    </div>         
                 </div>
             </div>
             <section class="shop spad">
@@ -182,33 +175,120 @@
                                 <!-- Các liên kết phân trang sẽ được tạo động ở đây -->
                                 </div>
                             </div>
-                            <div class="col-lg-6 col-md-6 col-sm-6">
+                            <!-- <div class="col-lg-6 col-md-6 col-sm-6">
                                 <div class="shop__last__text">
-                                    <p id="resultText">Hiển thị 1-9 trên tổng số 10 kết quả</p>
                                 </div>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>
+                    </div>
+                </div>
             
-                <script src="/js/sanpham.js"></script>
+                <script>
+                    
+document.addEventListener("DOMContentLoaded", function () {
+    const jsonFilePath = "/json/ProductCategory.json";
+
+    let allProducts; // Danh sách sản phẩm gốc
+    let displayedProducts; // Danh sách sản phẩm hiển thị sau khi tìm kiếm
+
+    fetch(jsonFilePath)
+        .then(response => response.json())
+        .then(data => {
+            allProducts = [].concat(
+                data.banhmi
+            );
+
+            // Ban đầu, danh sách hiển thị giống như danh sách gốc
+            displayedProducts = [...allProducts];
+
+            const productContainer = document.getElementById('productContainer');
+            const searchInput = document.getElementById('searchInput');
+            const sortOption = document.getElementById('sortOption');
+
+            searchInput.addEventListener('input', function () {
+                const searchTerm = this.value.toLowerCase();
+
+                // Lọc sản phẩm theo điều kiện tìm kiếm
+                displayedProducts = allProducts.filter(product =>
+                    product.name.toLowerCase().includes(searchTerm)
+                );
+
+                // Sắp xếp và hiển thị sản phẩm sau khi tìm kiếm
+                sortAndDisplay();
+            });
+
+            sortOption.addEventListener('change', function () {
+                // Sắp xếp và hiển thị sản phẩm sau khi tìm kiếm
+                sortAndDisplay();
+            });
+
+            window.sortProducts = sortAndDisplay;
+
+            function displayProducts(productList) {
+                productContainer.innerHTML = '';
+
+                productList.forEach(product => {
+                    const productItem = createProductElement(product);
+                    productContainer.appendChild(productItem);
+                });
+            }
+
+            function createProductElement(product) {
+                const productItem = document.createElement('div');
+                productItem.className = 'col-lg-3 col-md-6 col-sm-6';
+                productItem.innerHTML = `
+                    <div class="product__item">
+                        <div class="product__item__pic set-bg" style="background: url(${product.image})">
+                            <div class="product__label">
+                                <span>${product.label}</span>
+                            </div>
+                        </div>
+                        <br/>
+                        <div class="product__item__text">
+                            <h6><a href="#">${product.name}</a></h6>
+                            <div class="product__item__price">${product.price} VND</div>
+                            <div class="cart_add">
+                                <a href="#">Thêm vào giỏ hàng</a>
+                            </div>
+                        </div>
+                    </div>
+                `;
+                return productItem;
+            }
+
+            function sortAndDisplay() {
+                const selectedOption = sortOption.value;
+                console.log('Selected Option:', selectedOption);
+            
+                // Sắp xếp danh sách sản phẩm hiển thị
+                displayedProducts.sort((a, b) => {
+                    if (selectedOption === 'price') {
+                        console.log('Sorting by Price');
+                        console.log('a.price:', a.price);
+                        console.log('b.price:', b.price);
+                        return parseFloat(a.price) - parseFloat(b.price);
+                    } else if (selectedOption === 'name') {
+                        console.log('Sorting by Name');
+                        return a.name.localeCompare(b.name);
+                    }
+                });
+            
+                // Hiển thị danh sách sản phẩm đã sắp xếp
+                displayProducts(displayedProducts);
+            }
+            // Hiển thị toàn bộ danh sách sản phẩm khi tải trang
+            displayProducts(allProducts);
+        })
+        .catch(error => console.error('Lỗi khi lấy thông tin sản phẩm:', error));
+});
+
+                </script>
             </section>
             
             <div class="shop__last__option">
-                <div class="row">
-                    <div class="col-lg-6 col-md-6 col-sm-6">
-                        <div class="shop__pagination">
-                            <a href="#">1</a>
-                            <a href="#">2</a>
-                            <a href="#">3</a>
-                            <a href="#"><span class="arrow_carrot-right"></span></a>
-                        </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Shop Section End -->
-
+                
     <!--Navigation Footer Begin-->
     <footer class="footer bgimg  footer-font" style="background-image: url(/img/hinh/image/footer-bg.jpg);">
         <div class="container">

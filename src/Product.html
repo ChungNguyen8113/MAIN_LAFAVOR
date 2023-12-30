@@ -109,32 +109,27 @@
                 <div class="categories__slider owl-carousel">
                     <div class="categories__item">
                         <div class="categories__item__icon">
-                            <span class="flaticon-029-cupcake-3"></span>
-                            <h5>Bánh mỳ</h5>
+                            <a href='/src/Product.html'><span class="flaticon-005-pancake"></span><h5>Tất cả</h5></a>
                         </div>
                     </div>
                     <div class="categories__item">
                         <div class="categories__item__icon">
-                            <span class="flaticon-034-chocolate-roll"></span>
-                            <h5>Bánh quy</h5>
+                            <a href='/src/Product-Banhmy.html'><span class="flaticon-034-chocolate-roll"></span><h5>Bánh mì</h5></a>
                         </div>
                     </div>
                     <div class="categories__item">
                         <div class="categories__item__icon">
-                            <span class="flaticon-005-pancake"></span>
-                            <h5>Bánh theo mùa</h5>
+                            <a href='/src/Product-Banhquy.html'><span class="flaticon-030-cupcake-2"></span><h5>Bánh quy</h5></a>
                         </div>
                     </div>
                     <div class="categories__item">
                         <div class="categories__item__icon">
-                            <span class="flaticon-030-cupcake-2"></span>
-                            <h5>Combo</h5>
+                            <a href='/src/Product-Banhtheomua.html'><span class="flaticon-006-macarons"></span><h5>Bánh theo mùa</h5></a>
                         </div>
                     </div>
                     <div class="categories__item">
                         <div class="categories__item__icon">
-                            <span class="flaticon-030-cupcake-2"></span>
-                            <h5>Sản phẩm khác</h5>
+                            <a href='/src/Product-Banhkhac.html'></a> <span class="flaticon-029-cupcake-3"></span><h5>Bánh khác</h5>
                         </div>
                     </div>
                 </div>
@@ -150,65 +145,43 @@
                 <div class="row">
                     <div class="col-lg-7 col-md-7">
                         <div class="shop__option__search">
-                            <form action="#">
-                                <input type="text" placeholder="Tìm kiếm">
+                            <form action="#" onsubmit="return false;">
+                                <input type="text" id="searchInput" placeholder="Tìm kiếm" style="margin-top: 0px" oninput="searchAndSort()">
                                 <button type="submit"><i class="fa fa-search"></i></button>
                             </form>
                         </div>
                     </div>
                     <div class="col-lg-5 col-md-5">
                         <div class="shop__option__right">
-                            <select>
-                                <option value="">Default sorting</option>
-                                <option value="">A to Z</option>
-                                <option value="">1 - 8</option>
-                                <option value="">Name</option>
+                            <select id="sortOption" onchange="sortProducts()">
+                                <option value="default">Mặc định sắp xếp</option>
+                                <option value="price">Sắp xếp theo giá</option>
+                                <option value="name">Sắp xếp theo tên</option>
                             </select>
-                            <a href="#"><i class="fa fa-list"></i></a>
-                            <a href="#"><i class="fa fa-reorder"></i></a>
                         </div>
                     </div>
                 </div>
             </div>
-            <section class="shop spad">
-                <div class="container">
-                    <div class="row" id="productContainer">
-                    <!-- Các sản phẩm sẽ được tạo động ở đây -->
-                    </div>
-                    <div class="shop__last__option">
-                        <div class="row">
-                            <div class="col-lg-6 col-md-6 col-sm-6">
-                                <div class="shop__pagination" id="pagination">
-                                <!-- Các liên kết phân trang sẽ được tạo động ở đây -->
-                                </div>
-                            </div>
-                            <div class="col-lg-6 col-md-6 col-sm-6">
-                                <div class="shop__last__text">
-                                    <p id="resultText">Hiển thị 1-9 trên tổng số 10 kết quả</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            
-                <script src="/js/sanpham.js"></script>
 
-            </section>
-            
+            <div class="row" id="productContainer">
+                <!-- Các sản phẩm sẽ được tạo động ở đây -->
+            </div>
+
             <div class="shop__last__option">
                 <div class="row">
                     <div class="col-lg-6 col-md-6 col-sm-6">
-                        <div class="shop__pagination">
-                            <a href="#">1</a>
-                            <a href="#">2</a>
-                            <a href="#">3</a>
-                            <a href="#"><span class="arrow_carrot-right"></span></a>
+                        <div class="shop__pagination" id="pagination">
+                            <!-- Các liên kết phân trang sẽ được tạo động ở đây -->
+                            <script src="/js/sanpham.js"></script>
                         </div>
+                    </div>
                 </div>
             </div>
+           
         </div>
     </section>
     <!-- Shop Section End -->
+
 
     <!--Navigation Footer Begin-->
     <footer class="footer bgimg  footer-font" style="background-image: url(/img/hinh/image/footer-bg.jpg);">

@@ -6,99 +6,97 @@
         "image": "/img/shop/Banhmi/white-bap.jpg",
         "label": "Bánh mì",
         "name": "White bap",
-        "price": "$25.00",
-        "description": "White Bap là một tác phẩm nghệ thuật ẩm thực, hấp dẫn với vị ngon và hương thơm đặc trưng. Với lớp vỏ mềm mịn, giòn tan và màu trắng tinh khôi, White Bap không chỉ là một bữa ăn ngon mắt mà còn làm hài lòng khẩu vị khó tính nhất.Những hạt hạt bột mịn màng tạo nên chiếc bánh mì trắng như tinh chất, đậm đà và thơm ngon. Bạn sẽ trải nghiệm được hương vị đặc trưng của bánh mì nước ngoài ngay từ lần đầu tiên thưởng thức.White Bap được chế biến từ những nguyên liệu chất lượng cao, đảm bảo an toàn và dinh dưỡng. Đây không chỉ là một loại bánh mì, mà là một tác phẩm nghệ thuật của đầu bếp chuyên nghiệp.'\n'Hãy để White Bap trở thành điểm nhấn đặc biệt trong bữa ăn của bạn. Sự kết hợp tinh tế giữa vị ngon, hương thơm và chất lượng đã làm nên tên tuổi cho loại bánh mì này. "
+        "price": "25000"
       },
       {
         "prid": "2",
         "image": "/img/shop/Banhmi/white-bun.jpg",
         "label": "Bánh mì",
         "name": "White bun",
-        "price": "$05.00",
-        "description": "White Bun là sự kết hợp hoàn hảo giữa vị béo của bột mỡ và sự giòn ngon của vỏ bánh mềm mịn. Với màu trắng tinh khôi và hương thơm dễ chịu, chiếc bánh này sẽ đưa bạn đến một hành trình vị giác đặc sắc. Lớp vỏ bánh mềm mịn như lụa, giữ lại hơi nước tạo nên độ giòn ngon đặc trưng. Bạn sẽ cảm nhận ngay từ lần đầu thưởng thức. Mỗi miếng bánh mì là một hòa quyện của hương vị ngọt ngào và vị béo của bột mỡ. White Bun không chỉ là một lựa chọn cho bữa sáng hoặc bữa trưa, mà còn là điểm nhấn thú vị trong các buổi tiệc và sự kiện. Được làm từ những nguyên liệu chất lượng, đảm bảo an toàn và dinh dưỡng, chiếc bánh này sẽ làm hài lòng mọi thực khách. White Bun mang đến trải nghiệm thú vị của sự kết hợp hài hòa giữa vị béo, giòn ngon và hương thơm tinh tế. Đến và khám phá hương vị đặc biệt của loại bánh mì này ngay hôm nay!"
+        "price": "30000"
       },
       {
         "prid": "3",
         "image": "/img/shop/Banhmi/white-dinner-roll.jpg",
         "label": "Bánh mì",
         "name": "White dinner roll",
-        "price": "$14.00"
+        "price": "45000"
       },
       {
         "prid": "4",
         "image": "/img/shop/Banhmi/white-farmers-loaf.jpg",
         "label": "Bánh mì",
         "name": "white farmers loaf",
-        "price": "$32.00"
+        "price": "40000"
       },
       {
         "prid": "5",
         "image": "/img/shop/Banhmi/white-flour-loaf.jpg",
         "label": "Bánh mì",
         "name": "Mississippi Mud",
-        "price": "$08.00"
+        "price": "39000"
       },
       {
         "image": "/img/shop/Banhmi/white-hot-dog-bun.jpg",
         "label": "Bánh mì",
         "name": "white hot dog bun",
-        "price": "$98.85"
+        "price": "28000"
       },
       {
         "prid": "6",
         "image": "/img/shop/Banhmi/white-loaf.jpg",
         "label": "Bánh mì",
         "name": "white loaf",
-        "price": "$5.77"
+        "price": "33000"
       },
       {
         "prid": "7",
         "image": "/img/shop/Banhmi/white-loaf-mini.jpg",
         "label": "Bánh mì",
         "name": "white loaf mini",
-        "price": "$26.41"
+        "price": "42000"
       },
       {
         "prid": "8",
         "image": "/img/shop/Banhmi/whole-wheat-bun.jpg",
         "label": "Bánh mì",
         "name": "whole wheat bun",
-        "price": "$22.47"
+        "price": "28000"
       },
       {
         "prid": "9",
         "image": "/img/shop/Banhmi/whole-wheat-dinner-roll.jpg",
         "label": "Bánh mì",
         "name": "whole wheat dinner roll",
-        "price": "$22.47"
+        "price": "34000"
       },
       {
         "prid": "10",
         "image": "/img/shop/Banhmi/whole-wheat-loaf.jpg",
         "label": "Bánh mì",
         "name": "whole wheat loaf",
-        "price": "$22.47"
+        "price": "42000"
       },
       {
         "prid": "11",
         "image": "/img/shop/Banhmi/traditional-hamburger-bun.jpg",
         "label": "Bánh mì",
         "name": "traditional hamburger bun",
-        "price": "$32.00"
+        "price": "38000"
       },
       {
         "prid": "12",
         "image": "/img/shop/Banhmi/traditional-hot-dog-bun.jpg",
         "label": "Bánh mì",
         "name": "Traditional hot dog bun",
-        "price": "$30.00"
+        "price": "43000"
       },
       {
         "prid": "13",
         "image": "/img/shop/Banhmi/traditional-slider-bun.jpg",
         "label": "Bánh mì",
         "name": "Traditional slider bun",
-        "price": "$31.00"
+        "price": "29000"
       }
     ],
     "banhquy": [
@@ -107,93 +105,151 @@
         "image": "/img/shop/Banhquy/almond-salt-cookies.jpg",
         "label": "Bánh quy",
         "name": "almond salt cookies",
-        "price": "$31.00"
+        "price": "20000"
       },
       {
         "prid": "15",
         "image": "/img/shop/Banhquy/cigarette-cookies.jpg",
         "label": "Bánh quy",
         "name": "cigarette cookies",
-        "price": "$31.00"
+        "price": "18000"
       },
       {
         "prid": "16",
         "image": "/img/shop/Banhquy/coconut-rocher-cookies.jpg",
         "label": "Bánh quy",
         "name": "coconut rocher cookies",
-        "price": "$31.00"
+        "price": "26000"
       },
       {
         "prid": "17",
         "image": "/img/shop/Banhquy/dark-chocolate-cookies.jpg",
         "label": "Bánh quy",
         "name": "dark chocolate cookies",
-        "price": "$31.00"
+        "price": "19000"
       },
       {
         "prid": "18",
         "image": "/img/shop/Banhquy/delicacy-coconut-cookies.jpg",
         "label": "Bánh quy",
         "name": "delicacy coconut cookies",
-        "price": "$31.00"
+        "price": "23000"
       },
       {
         "prid": "19",
         "image": "/img/shop/Banhquy/gato-bass-mini.jpg",
         "label": "Bánh quy",
         "name": "gato bass mini",
-        "price": "$31.00"
+        "price": "48000"
       },
       {
         "prid": "20",
         "image": "/img/shop/Banhquy/langdechat.jpg",
         "label": "Bánh quy",
         "name": "langdechat",
-        "price": "$31.00"
+        "price": "35000"
       },
       {
         "prid": "21",
         "image": "/img/shop/Banhquy/meringue-cookies.jpg",
         "label": "Bánh quy",
         "name": "meringue-cookies",
-        "price": "$31.00"
+        "price": "35000"
       },
       {
         "prid": "22",
         "image": "/img/shop/Banhquy/red-velvet-cookies.jpg",
         "label": "Bánh quy",
         "name": "red velvet cookies",
-        "price": "$31.00"
+        "price": "48000"
       }
     ],
-    "Banhtheomua": [
+    "banhtheomua": [
       {
         "prid": "23",
-        "image": "/img/shop/Banhquy/almond-salt-cookies.jpg",
+        "image": "/img/shop/Banhtheomua/Cupcake.jpg",
         "label": "Bánh theo mùa",
-        "name": "",
-        "price": "$31.00"
+        "name": "Cupcake",
+        "price": "32000"
       },
       {
         "prid": "24",
-        "image": "/img/shop/Banhquy/almond-salt-cookies.jpg",
+        "image": "/img/shop/Banhtheomua/Donut.jpg",
         "label": "Bánh theo mùa",
-        "name": "",
-        "price": "$31.00"
+        "name": "Donut",
+        "price": "32000"
       },
       {
         "prid": "25",
-        "image": "/img/shop/Banhquy/almond-salt-cookies.jpg",
+        "image": "/img/shop/Banhtheomua/fingure-cookie.jpg",
         "label": "Bánh theo mùa",
-        "name": "",
-        "price": "$31.00"
+        "name": "Fingure Cookie",
+        "price": "35000"
       },
       {
         "prid": "26",
-        "image": "/img/shop/Banhquy/almond-salt-cookies.jpg",
+        "image": "/img/shop/Banhtheomua/Roll-cake.jpg",
         "label": "Bánh theo mùa",
-        "name": "",
-        "price": "$31.00"
+        "name": "Roll Cake",
+        "price": "48000"
+      },
+      {
+        "prid": "27",
+        "image": "/img/shop/Banhtheomua/Noel1.jpg",
+        "label": "Bánh theo mùa",
+        "name": "Noel 1",
+        "price": "80000"
+      },
+      {
+        "prid": "28",
+        "image": "/img/shop/Banhtheomua/Noel2.jpg",
+        "label": "Bánh theo mùa",
+        "name": "Noel 2",
+        "price": "85000"
+      },
+      {
+        "prid": "29",
+        "image": "/img/shop/Banhtheomua/Noel3.jpg",
+        "label": "Bánh theo mùa",
+        "name": "Noel 3",
+        "price": "102000"
+      },
+      {
+        "prid": "30",
+        "image": "/img/shop/Banhtheomua/noel4.jpg",
+        "label": "Bánh theo mùa",
+        "name": "Noel 4",
+        "price": "95000"
+      }
+    ],
+    "banhkhac":[
+      {
+        "prid": "31",
+        "image": "/img/shop/Banhkhac/Chocolate_Chip.jpg",
+        "label": "Bánh khác",
+        "name": "Chocolate Chip",
+        "price": "40000"
+      },
+      {
+        "prid": "32",
+        "image": "/img/shop/Banhkhac/Gingerbread_Scone.jpg",
+        "label": "Bánh khác",
+        "name": "Gingerbread Scone",
+        "price": "42000"
+      },
+      {
+        "prid": "33",
+        "image": "/img/shop/Banhkhac/WildBlueberry_CustardDanish.jpg",
+        "label": "Bánh khác",
+        "name": "Wild Blueberry Custard Danish",
+        "price": "55000"
+      },
+      {
+        "prid": "34",
+        "image": "/img/shop/Banhkhac/Mango-bun.jpg",
+        "label": "Bánh khác",
+        "name": "Mango Bun",
+        "price": "45000"
       }
     ]
   }
