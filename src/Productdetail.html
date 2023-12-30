@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>LaFavor</title>
+        <title>Sản phẩm</title>
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="/img/hinh/favicon_io/favicon.ico"/>
         <!--Google Font-->
@@ -56,8 +56,9 @@
                         </ul>   
                         <ul class="nav navbar-nav d-flex ms-auto">                   
                             <li class="nav-item">
-                                <a class="nav-link" href="Cart.html">
+                                <a class="nav-link" href="shoppingcart.html">
                                     <span class="bi bi-cart"></span>
+                                    <span id="cart-number">0</span>
                                 </a>
                             </li>
                             <li class="nav-item">
@@ -77,72 +78,13 @@
             </nav>                           
             <!--Navigation End-->
         <!-- Header Section End -->
-   <!-- Breadcrumb Begin -->
-   <div class="breadcrumb-option">
-    <div class="container">
-        <div class="row">
-                <div class="breadcrumb__links">
-                    <a href="../index.html">Menu</a>
-                    <a href="Product.html">Sản phẩm</a>
-                    <span>White Flour Loaf</span>
+
+
+        <div id="productDetailContainer">
+            <!-- Hiển thị thông tin chi tiết sản phẩm ở đây -->
         </div>
-    </div>
-</div>
-<!-- Breadcrumb End -->
-    <!-- Shop Details Section Begin -->
-    <section class="product-details spad">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-7">
-                    <div class="product__details__img">
-                        <div class="product__details__big__img">
-                            <img class="big_img" src="/img/hinh/product/white flour loaf.png" alt="" height="400">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-5">
-                    <div class="product__details__text">
-                        <h4>White Flour Loaf</h4>
-                        <h6>30.000 đ - 60.000 đ</h6>
-                        <h5>Kích thước
-                            <div class="options_size">
-                                <input type="button" id="size_nho" value="nhỏ">
-                                <input type="button" id="size_vua" value="vừa">
-                                <input type="button" id="size_lon" value="lớn">
-                            </div>
-                        </h5>
-                        <h5>Thêm
-                            <div class="options_topping">
-                                <input type="button" id="size_nho" value="hạt hạnh nhân">
-                                <input type="button" id="size_nho" value="hạt óc chó"> <br/>
-                                <input type="button" id="size_nho" value="nho khô">
-                                <input type="button" id="size_nho" value="hạt điều"> <br/>
-                                <input type="button" id="size_nho" value="hạt chocolate">
-                            </div>
-                            
-                        </h5>
-                        <div class="product__details__option">
-                            <a href="#" class="add_btn">Thêm vào giỏ</a>
-                            <a href="#" class="order_btn">Đặt hàng ngay</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="product__details__tab">
-                <div class="col-lg-12">
-                    <hr/>
-                    <h4><b>Mô tả sản phẩm</b></h4>
-                    <div class="tab-content">
-                            <p><b><i>Thành phần:</i></b> Bột mì, nước, muối i-ốt, men, dầu thực vật (cải dầu), bột đậu nành, Vitamin (Thiamin, Axit Folic).</p>
-                            <p><b><i>Sản phẩm có chứa:</i></b>  Lúa mì, Gluten & Đậu nành. </p>
-                            <p><b><i>White Flour Loaf </i></b>làm từ nguyên hạt lúa mì xay mịn ra hay còn được gọi là bột mì nguyên cám. Bột mì nguyên cảm có màu nâu nhạt vì có cả phần màu nâu của cám được nghiền cùng. Whole wheat flour có hàm lượng protein (14%) cao hơn so với bột mì trắng (~ 11.7%). </p>
-                    </div>
-                    <hr/>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Shop Details Section End -->
+    
+    <script src="/js/sanphamchitiet.js"></script>
 
     <!-- Related Products Section Begin -->
     <div class="container text-center">
