@@ -19,6 +19,9 @@
         <!-- Core theme CSS (includes Bootstrap)-->
         <link rel="stylesheet" href="../css/stylecart.css" type="text/css">  
         <link rel="stylesheet" href="../css/style1.css" type="text/css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+
 
         <!--Script-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
@@ -116,17 +119,79 @@
                                 <form action="#">
                                     <input type="text" placeholder="Họ và tên">
                                     <input type="text" placeholder="Số điện thoại">
-                                    <input type="text" placeholder="Nhập địa chỉ">
+                                    <input type="text" placeholder="Ghi chú (Nếu có)">
                                 </form>
                             </div>
                         </div>
                     </div>
                     <br>
                     <div class="row">
-                           <div class="col-lg-8">
-                               <p class="shopping__cart__text">Phương thức thanh toán</p>
-                           </div>
-                    </div>        
+                        <div class="col-lg-8">
+                            <p class="shopping__cart__text">Phương thức thanh toán</p>
+                        </div>
+                 </div> 
+                 <div class="row"> 
+                     <div class="col-lg-2 d-flex justify-content-end"> 
+                         <div class="form-check">
+                             <input class="form-check-input" type="radio" name="paymentMethod" id="cashPayment" checked>
+                         </div>
+                     </div>
+                     <div class="col-lg-10">
+                         <div class="form-check">
+                             <i class="fas fa-dollar-sign"></i>
+                             <label class="form-check-label" for="cashPayment">
+                                 Thanh toán tiền mặt
+                             </label>
+                         </div>
+                     </div>
+                 </div> 
+                 <div class="row"> 
+                     <div class="col-lg-2 d-flex justify-content-end"> 
+                         <div class="form-check">
+                             <input class="form-check-input" type="radio" name="paymentMethod" id="bankTransfer">
+                         </div>
+                     </div>
+                     <div class="col-lg-10">
+                         <div class="form-check">
+                             <i class="fas fa-building"></i>
+                             <label class="form-check-label" for="bankTransfer">
+                                 Chuyển khoản ngân hàng
+                             </label>
+                         </div>
+                     </div>
+                 </div>
+                 
+                 <div id="bankList" style="display: none;">
+                     <select class="form-select" aria-label="Default select example">
+                         <option selected>Chọn ngân hàng</option>
+                         <option value="bidv">Ngân hàng Thương mại cổ phần Đầu tư và Phát triển Việt Nam (BIDV)</option>
+                         <option value="vietcombank">Ngân hàng Thương mại cổ phần Ngoại thương Việt Nam (Vietcombank)</option>
+                         <option value="vietinbank">Ngân hàng Thương mại cổ phần Công Thương Việt Nam (VietinBank)</option>
+                     </select>
+                 </div>    
+                 <script>
+                     document.addEventListener('DOMContentLoaded', function () {
+                         var bankList = document.getElementById('bankList');
+                         var bankTransferRadio = document.getElementById('bankTransfer');
+                         var cashPaymentRadio = document.getElementById('cashPayment');
+                 
+                         // Xử lý sự kiện khi chọn phương thức thanh toán
+                         function handlePaymentMethodChange() {
+                             if (bankTransferRadio.checked) {
+                                 bankList.style.display = 'block';
+                             } else {
+                                 bankList.style.display = 'none';
+                             }
+                         }
+                 
+                         // Gọi hàm xử lý sự kiện khi trang được tải
+                         handlePaymentMethodChange();
+                 
+                         // Thêm sự kiện cho radio buttons
+                         bankTransferRadio.addEventListener('change', handlePaymentMethodChange);
+                         cashPaymentRadio.addEventListener('change', handlePaymentMethodChange);
+                     });
+                 </script>        
                 </div>
 
                 <div class="col-lg-6">
@@ -145,12 +210,12 @@
                                 </div>
                             </div>
                             <div class="row justify-content-end">
-                                <div class="col-lg-2">
+                                <!-- <div class="col-lg-2">
                                     <i class="fas fa-edit"></i>
                                 </div>
                                 <div class="col-lg-10 d-flex justify-content-end">
                                     
-                                </div>
+                                </div> -->
                             </div>
                             <div class="row">
                                 <div class="col-lg-4">
@@ -176,15 +241,14 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="row">
-                                <div class="total-bar">
-                                    <!-- Thanh màu cam hiển thị tổng tiền và thành tiền -->
+                            <div class="custom-frame-footer">
+                                <div class="row">
                                     <div class="col-lg-4">
                                         <p>Thành tiền</p>
                                         <p>185.000đ</p>
                                     </div>
                                     <div class="col-lg-8 d-flex justify-content-end">
-                                            <button class="checkout-button" id="placeOrderBtn">Đặt hàng</button>
+                                        <button class="checkout-button" id="placeOrderBtn">Đặt hàng</button>
                                     </div>
                                 </div>
                             </div>

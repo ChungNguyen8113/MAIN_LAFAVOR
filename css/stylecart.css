@@ -201,6 +201,7 @@ ol {
   font-weight: bold;
   color: black; /* Màu chữ */
   position: relative;
+  margin: 20px;
 }
 
 .shopping__cart__text::after {
@@ -214,7 +215,7 @@ ol {
   background-color: #e09139; /* Màu của đường gạch dưới */
 }
 .shopping__cart__button {
-  margin-left: 10px; /* Khoảng cách giữa chữ và nút */
+  margin: 20px; /* Khoảng cách giữa chữ và nút */
   color:#000000;
   padding: 10px 20px;
   font-size: 14px;
@@ -225,6 +226,7 @@ ol {
 }
 .shopping__cart form {
   padding-top:10px;
+  margin-right: 40px;
 }
 .shopping__cart form input {
   width: 100%;
@@ -266,19 +268,34 @@ ol {
     font-weight: bold;
     color: black; /* Màu chữ */
     position: relative;
+    margin-left: 20px;
 }
 
 .custom-frame {
   max-width: 600px;
-  padding: 20px;
   width: 100%;
   flex-grow: 1;
   border: 1px solid #ccc;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
+  border-radius: 20px;
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.custom-frame-footer {
+  background-color: #e09139; /* Màu nền cam */
+  padding: 20px ; /* Điều chỉnh padding theo nhu cầu */
+  width: 100%; /* Chiếm toàn bộ chiều rộng của custom-frame */
+    box-sizing: border-box;
+    flex-shrink: 0; 
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.custom-frame-footer p {
+  color: #fff; /* Màu văn bản trắng */
+  margin: 0; /* Loại bỏ margin mặc định */
 }
 
 .total-bar {
@@ -319,7 +336,40 @@ ol {
   position: relative;
 }
 
+.form-check {
+  margin-bottom: 15px;
+}
+  
+.form-check-input {
+  margin-right: 10px;
+}
+  /* Loại bỏ viền và box-shadow cụ thể */
+.form-check-input[type="radio"]:checked,
+.form-check-input[type="checkbox"]:checked {
+  border: none !important;
+  box-shadow: none !important;
+}
 
+      /* Danh sách ngân hàng */
+      #bankList {
+          margin-top: 15px;
+      }
+
+/* Màu chữ và biểu tượng radio khi chưa được chọn */
+.form-check-input:not(:checked) {
+      color: #e09139 !important; /* Màu chữ khi chưa được chọn */
+  }
+
+  /* Màu chữ và biểu tượng radio khi được chọn */
+  .form-check-input:checked {
+      color: #ffffff; /* Màu chữ khi được chọn */
+      background-color: #e09139 !important; /* Màu nền khi được chọn */
+  }
+
+  /* Màu chữ và biểu tượng radio khi hover */
+  .form-check-input:hover {
+      color: #e09139 !important; /* Màu chữ khi hover */
+  }
 .cart__discount {
   margin-bottom: 60px;
 }
@@ -418,14 +468,16 @@ ol {
 
 .contact__text h3 {
   color: #e09319;
-  font-weight: 700;
+  font-weight: 1000;
   font-style: italic;
   font-family: "Playfair Display", serif;
   margin-bottom: 20px;
+  font-size: 40px;
 }
 
 .contact__text ul {
   margin-bottom: 35px;
+  margin-left: 35px;
 }
 .contact__text ul li {
   list-style: none;
@@ -441,7 +493,7 @@ ol {
 
 .contact__form form input {
   width: 100%;
-  height: 50px;
+  height: 50px ;
   border: 1px solid #e1e1e1;
   background: #fafafa;
   font-size: 14px;
