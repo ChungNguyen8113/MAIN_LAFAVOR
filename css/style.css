@@ -715,6 +715,10 @@ ol {
   border: none;
   margin-bottom: 20px;
 }
+
+.class__form form button {
+  margin-left: 20px;
+}
 .class__form form input::-webkit-input-placeholder {
   color: #444444;
 }
