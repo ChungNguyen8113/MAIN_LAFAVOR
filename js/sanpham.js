@@ -66,7 +66,7 @@ document.addEventListener("DOMContentLoaded", function () {
                             <h6><a href="#">${product.name}</a></h6>
                             <div class="product__item__price">${product.price} VND</div>
                             <div class="cart_add">
-                                <a href="#">Thêm vào giỏ hàng</a>
+                                <a href="#" onclick="themVaoGioHang()">Thêm vào giỏ hàng</a>
                             </div>
                         </div>
                     </div>

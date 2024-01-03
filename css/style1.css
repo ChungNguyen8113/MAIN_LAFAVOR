@@ -41,7 +41,6 @@
   border-radius: 50%;
   position:absolute;
   bottom:50%;
-  right: 150px;
 }
 
 /*Header*/
@@ -855,10 +854,7 @@ margin-top: -10px;
     margin-top: 30px;
     font-style: italic;
   }
-<<<<<<< HEAD
-=======
 
->>>>>>> 73583548a8a889f4d5b4c814a6e81f5644cb9fcb
   /* Định dạng phần tìm kiếm */
     .product__item {
         margin-bottom: 20px; /* Thêm khoảng cách giữa các sản phẩm */
@@ -869,7 +865,6 @@ margin-top: -10px;
         visibility: hidden; /* Ẩn sản phẩm mà không làm thay đổi bố trí */
         margin-bottom: 0; /* Không có khoảng trống cho sản phẩm ẩn */
     }
-<<<<<<< HEAD
 
 #productDetailContainer{
   padding: 50px;
@@ -890,5 +885,38 @@ margin-top: -10px;
   margin-right: 20px;
   text-decoration: none;
 }
-=======
->>>>>>> 73583548a8a889f4d5b4c814a6e81f5644cb9fcb
+
+
+.table_cart_item{
+width:100%;
+text-align: center;
+border-spacing: 20px;
+}
+
+#cart-items-container th,
+#cart-items-container td {
+    padding: 10px;
+}
+
+#text_cart{
+  color:#E5902D;
+  text-align: center;
+  padding:30px;
+}
+/* Container chứa input và button */
+.cart__discount form {
+  display: flex;
+}
+
+/* Thiết lập chiều cao cho input và nút */
+.cart__discount #nhap_ma,
+.cart__discount #btn_nhap_ma {
+  height: 60px;
+  line-height: 60px; /* Đảm bảo văn bản ở giữa theo chiều cao */
+  margin:0;
+}
+
+.cart__total h5{
+  text-align: center;
+
+}
