@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 <div class="product__details__text">
                     <h4>${productDetail.name}</h4>
                     <div class="price">
-                        <span class="money">${productDetail.price}</span>
+                        <span class="money">${productDetail.price} VND</span>
                     </div>
                     <h5>Kích thước
                         <div class="options_size">
@@ -127,66 +127,47 @@ function updateColor() {
 }
 
 
+// Số sản phẩm trong giỏ hàng
+var soSanPhamTrongGioHang = 0;
 
-// Thêm một biến global để theo dõi số lượng giỏ hàng
-let cartQuantity = 0;
+// Hàm thêm sản phẩm vào giỏ hàng
+function themVaoGioHang() {
+    // Tăng số sản phẩm trong giỏ hàng lên 1
+    soSanPhamTrongGioHang++;
+    
+    // Cập nhật số lượng trên giao diện
+    document.getElementById('cart-number').innerText = soSanPhamTrongGioHang;
+}
+var gioHang = [];
 
-document.addEventListener("DOMContentLoaded", function () {
-    // ... Mã hiện tại ...
+// Hàm thêm sản phẩm vào giỏ hàng
+function themVaoGioHang() {
+    // Lấy thông tin sản phẩm đã chọn
+    const hinhSanPham = document.getElementById('productDetailContainer').querySelector('.big_img').src;
+    const tenSanPham = document.getElementById('productDetailContainer').querySelector('h4').innerText;
+    const giaSanPham = parseFloat(document.querySelector('.money').innerText.replace(' VND', ''));
+    const soLuong = parseInt(document.getElementById('num').value);
+    const kichThuoc = document.querySelector('.options_size .selected') ? document.querySelector('.options_size .selected').value : '';
+    const loaiHat = document.querySelector('.options_topping .selected') ? document.querySelector('.options_topping .selected').value : '';
 
-    // Chức năng thêm vào giỏ hàng
-    function themVaoGioHang() {
-        // Lấy thông tin sản phẩm từ trang chi tiết sản phẩm
-        const productName = productDetail.name;
-        const productSize = document.querySelector('.options_size .selected')?.value || 'Chưa chọn size';
-        const productToppings = Array.from(document.querySelectorAll('.options_topping .selected')).map(topping => topping.value).join(', ');
-        const quantity = parseInt(document.getElementById('num').value);
+    // Tạo đối tượng sản phẩm
+    var sanPham = {
+        hinh: hinhSanPham,
+        ten: tenSanPham,
+        gia: giaSanPham,
+        soLuong: soLuong,
+        kichThuoc: kichThuoc,
+        loaiHat: loaiHat
+    };
 
-        // Tạo đối tượng mô tả sản phẩm
-        const cartItem = {
-            name: productName,
-            size: productSize,
-            toppings: productToppings,
-            quantity: quantity
-        };
+    // Thêm sản phẩm vào mảng giỏ hàng
+    gioHang.push(sanPham);
 
-        // Lấy thông tin giỏ hàng từ Local Storage (nếu có)
-        let cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+    localStorage.setItem('gioHang', JSON.stringify(gioHang));
 
-        // Kiểm tra xem sản phẩm đã có trong giỏ hàng chưa
-        const existingItemIndex = cartItems.findIndex(item => item.name === productName && item.size === productSize && item.toppings === productToppings);
 
-        if (existingItemIndex !== -1) {
-            // Nếu sản phẩm đã có trong giỏ hàng, tăng số lượng
-            cartItems[existingItemIndex].quantity += quantity;
-        } else {
-            // Nếu sản phẩm chưa có trong giỏ hàng, thêm mới
-            cartItems.push(cartItem);
-        }
-
-        // Lưu thông tin giỏ hàng vào Local Storage
-        localStorage.setItem('cartItems', JSON.stringify(cartItems));
-
-        // Cập nhật số lượng giỏ hàng
-        cartQuantity += quantity;
-        updateCartNumber();
-    }
-
-    // Gọi hàm capNhatSoLuongGioHang khi DOMContentLoaded để khởi tạo số lượng giỏ hàng
-    updateCartNumber();
-});
-
-// Cập nhật số lượng giỏ hàng trên icon giỏ hàng
-function updateCartNumber() {
-    const cartNumberElement = document.getElementById('cart-number');
-    if (cartNumberElement) {
-        cartNumberElement.innerText = cartQuantity.toString();
-    }
+    // Cập nhật số lượng trên giao diện
+    document.getElementById('cart-number').innerText = gioHang.length;
 }
 
-const addToCartButton = document.querySelector('.shop_btn');
-addToCartButton.addEventListener('click', function (event) {
-    event.preventDefault();
-    themVaoGioHang();
-});
 

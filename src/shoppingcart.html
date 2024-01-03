@@ -101,10 +101,48 @@
             </nav>                           
             <!--Navigation End-->
         <!-- Header Section End -->
-
-    
-
+            <h2 id="text_cart">Giỏ hàng của bạn</h2>
+        <div class="row">
+            <div class="col-lg-8">
+                <table class="table_cart_item">
+                    <thead>
+                        <tr>
+                            <th>Ảnh sản phẩm</th>
+                            <th>Tên sản phẩm</th>
+                            <th>Giá</th>
+                            <th>Số lượng</th>
+                            <th>Kích thước</th>
+                            <th>Loại hạt</th>
+                        </tr>
+                    </thead>
+                    <tbody id="cart-items-container"></tbody>
+                </table>
         
+            </div>
+            <div class="col-lg-4">
+                <div class="cart__discount">
+                    <h6>Mã giảm giá</h6>
+                    <form action="#">
+                        <input type="text" placeholder="Nhập mã giảm giá" id="nhap_ma">
+                        <button type="submit" id="btn_nhap_ma">Áp dụng</button>
+                    </form>
+                </div>
+                <div class="cart__total" style="background-color: #eeeeee;">
+                    <h5>Tổng giỏ hàng</h5>
+                    <ul>
+                        <li>Tổng tiền hàng: <span class="cart__total_price">0₫</span></li>
+                        <li>Phí vận chuyển: <span>Miễn phí</span></li>
+                        <li>Tổng thanh toán:<span class="cart__total_price_ship">0₫</span></li>
+                    </ul>
+                    <div class="continue__btn update__btn">
+                        <a href="../src/Cart.html" class="btn_order">Mua hàng</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        
+
     <!--Navigation Footer Begin-->
     <footer class="footer bgimg  footer-font" style="background-image: url(/img/hinh/image/footer-bg.jpg);">
         <div class="container">
@@ -167,7 +205,35 @@
 <script src="../js/owl.carousel.min.js"></script>
 <script src="../js/jquery.nicescroll.min.js"></script>
 <script src="../js/main.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+    // Lấy thông tin giỏ hàng từ local storage
+    const gioHang = JSON.parse(localStorage.getItem("gioHang"));
 
+    // Hiển thị thông tin giỏ hàng ở đây
+    const gioHangContainer = document.getElementById('cart-items-container');
+
+    if (gioHang && gioHang.length > 0) {
+        gioHang.forEach(function (sanPham) {
+            gioHangContainer.innerHTML += `
+                        <tr>
+                        <td><img src="${sanPham.hinh}" alt="${sanPham.ten}" style="width: 50px; height: 50px;"></td>
+                        <td>${sanPham.ten}</td>
+                        <td>${sanPham.gia}</td>
+                        <td>${sanPham.soLuong}</td>
+                        <td>${sanPham.kichThuoc}</td>
+                        <td>${sanPham.loaiHat}</td>
+                        </tr>
+                    
+            `;
+        });
+    } else {
+        gioHangContainer.innerHTML = '<p>Giỏ hàng trống</p>';
+    }
+});
+
+
+</script>
 
 </body>
 

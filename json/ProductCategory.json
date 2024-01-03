@@ -6,97 +6,111 @@
         "image": "/img/shop/Banhmi/white-bap.jpg",
         "label": "Bánh mì",
         "name": "White bap",
-        "price": "25000"
+        "price": "25000",
+        "description": "Bánh mì White Bap là một loại bánh mì ngon miệng và độc đáo, nổi tiếng với lớp vỏ bánh trắng mịn màng và hương vị thơm ngon. Bánh mì này không chỉ là một loại thực phẩm phổ biến mà còn là biểu tượng của sự đa dạng trong ẩm thực. Bánh mì White Bap thường được làm từ những nguyên liệu chất lượng cao để đảm bảo hương vị tốt nhất. Các thành phần chính bao gồm: bột mì, nước, dầu ăn, đường, muối, men nở,...Bánh mì White Bap thường được sử dụng trong nhiều món ăn khác nhau. Với vỏ bánh mì trắng mịn màng và hương vị đặc trưng, bánh mì White Bap không chỉ là một món ăn ngon mắt mà còn là nguồn cảm hứng cho nhiều đầu bếp sáng tạo trên khắp thế giới."
       },
       {
         "prid": "2",
         "image": "/img/shop/Banhmi/white-bun.jpg",
         "label": "Bánh mì",
         "name": "White bun",
-        "price": "30000"
+        "price": "30000",
+        "description": "Bánh mì White Bun là một loại bánh mì phổ biến với vỏ mềm mại, màu trắng tinh khôi và hương vị nhẹ nhàng. Loại bánh mì này thường được sử dụng trong nhiều biến thể của ẩm thực trên khắp thế giới, từ bữa sáng đến bữa tối, và còn là thành phần chính trong nhiều món ăn. Nguyên liệu để làm ra những chiếc bánh ngon bao gồm: bột mì, đường, nước, men nở,... Với vị ngon và tính linh hoạt trong việc kết hợp với nhiều nguyên liệu khác nhau, bánh mì White Bun không chỉ là một món ăn cơ bản mà còn là một phần quan trọng của ẩm thực thế giới."
       },
       {
         "prid": "3",
         "image": "/img/shop/Banhmi/white-dinner-roll.jpg",
         "label": "Bánh mì",
         "name": "White dinner roll",
-        "price": "45000"
+        "price": "45000",
+        "description": "Bánh mì White Dinner Roll là một loại bánh mì nhỏ, trắng mịn, thường được sử dụng trong các bữa tối hay bữa tiệc tối. Được biết đến với vị ngon, độ xốp và hình dáng nhỏ gọn, bánh mì này thường là một sự bổ sung tuyệt vời cho bàn ăn gia đình hoặc bữa tiệc. Thành phần gồm có: bột mì, nước, sữa, đường, men nở, bơ,.. Bánh mì White Dinner Roll thường được dùng trong các bữa tiệc, đặc biệt là bữa tối hoặc các dịp lễ tết. Với hình dáng nhỏ gọn và vị ngon tuyệt vời, bánh mì White Dinner Roll không chỉ là một phần quan trọng trong bữa ăn mà còn tô điểm cho không khí ấm cúng của các buổi liên hoan và gia đình."
       },
       {
         "prid": "4",
         "image": "/img/shop/Banhmi/white-farmers-loaf.jpg",
         "label": "Bánh mì",
         "name": "white farmers loaf",
-        "price": "40000"
+        "price": "40000",
+        "description": "Bánh mì White Farmers Loaf là một loại bánh mì trắng đơn giản và ngon miệng, mang đậm hương vị truyền thống. Bánh mì này thường được ưa chuộng vì vị ngon mềm mại và khả năng kết hợp linh hoạt với nhiều loại nhân khác nhau. Nguyên liệu gồm có: bột mì, nước, men nở, bơ, sữa,... Với hương vị truyền thống, bánh mì White Farmers Loaf không chỉ là một lựa chọn ngon miệng cho bữa ăn hàng ngày mà còn là biểu tượng của sự ấm cúng và truyền thống trong ẩm thực gia đình."
       },
       {
         "prid": "5",
         "image": "/img/shop/Banhmi/white-flour-loaf.jpg",
         "label": "Bánh mì",
         "name": "Mississippi Mud",
-        "price": "39000"
+        "price": "39000",
+        "description": "Bánh mì Mississippi Mud là một loại bánh mì trắng đơn giản và ngon miệng, mang đậm hương vị truyền thống. Bánh mì này thường được ưa chuộng vì vị ngon mềm mại và khả năng kết hợp linh hoạt với nhiều loại nhân khác nhau. Nguyên liệu gồm có: bột mì, nước, men nở, bơ, sữa,... Với hương vị truyền thống, bánh mì Mississippi Mud không chỉ là một lựa chọn ngon miệng cho bữa ăn hàng ngày mà còn là biểu tượng của sự ấm cúng và truyền thống trong ẩm thực gia đình."
       },
       {
         "image": "/img/shop/Banhmi/white-hot-dog-bun.jpg",
         "label": "Bánh mì",
         "name": "white hot dog bun",
-        "price": "28000"
+        "price": "28000",
+        "description": "Bánh mì White Hot Dog Bun là một loại bánh mì trắng, mềm mại và thường được sử dụng để chế biến bánh mì ăn kèm với xúc xích (hot dog). Bánh mì này thường có hình dạng dài hình ống, tạo điều kiện thuận lợi cho việc đựng xúc xích và các nguyên liệu khác. Nguyên liệu làm bánh bao gồm: bột mì, nước, đường, men nở, bở, sữa,... Bánh mì White Hot Dog Bun thường được sử dụng để chế biến bánh mì hot dog. Đặt xúc xích trong lòng bánh, sau đó thêm các nguyên liệu như nước sốt cà chua, hành tây, dưa leo, hoặc các loại sốt khác theo sở thích cá nhân. Bánh mì cũng có thể được sử dụng cho các món sandwich khác hoặc đơn giản chỉ ăn kèm với bơ hoặc gia vị."
       },
       {
         "prid": "6",
         "image": "/img/shop/Banhmi/white-loaf.jpg",
         "label": "Bánh mì",
         "name": "white loaf",
-        "price": "33000"
+        "price": "33000",
+        "description": "Bánh mì White Loaf là một loại bánh mì trắng, mềm mại và phổ biến, thường được sử dụng trong nhiều món ăn khác nhau. Với vị ngon đơn giản và hương thơm tinh tế, bánh mì này thích hợp cho nhiều ứng dụng từ bữa sáng đến bữa tối. Nguyên liệu gồm: bột mì, nước, men nở, bơ, sữa, đường,... Với hương vị tinh tế và độ mềm mại, bánh mì White Loaf không chỉ là một lựa chọn ưa thích trong gia đình mà còn là một phần quan trọng của ẩm thực hàng ngày."
       },
       {
         "prid": "7",
         "image": "/img/shop/Banhmi/white-loaf-mini.jpg",
         "label": "Bánh mì",
         "name": "white loaf mini",
-        "price": "42000"
+        "price": "42000",
+        "description": "Bánh mì White Loaf Mini là một loại bánh mì trắng, mềm mại và phổ biến, thường được sử dụng trong nhiều món ăn khác nhau. Với vị ngon đơn giản và hương thơm tinh tế, bánh mì này thích hợp cho nhiều ứng dụng từ bữa sáng đến bữa tối. Nguyên liệu gồm: bột mì, nước, men nở, bơ, sữa, đường,... Với hương vị tinh tế và độ mềm mại, bánh mì White Loaf Mini không chỉ là một lựa chọn ưa thích trong gia đình mà còn là một phần quan trọng của ẩm thực hàng ngày."
       },
       {
         "prid": "8",
         "image": "/img/shop/Banhmi/whole-wheat-bun.jpg",
         "label": "Bánh mì",
         "name": "whole wheat bun",
-        "price": "28000"
+        "price": "28000",
+        "description": "Bánh mì Whole Wheat Bun là một loại bánh mì phổ biến với vỏ mềm mại, màu trắng tinh khôi và hương vị nhẹ nhàng. Loại bánh mì này thường được sử dụng trong nhiều biến thể của ẩm thực trên khắp thế giới, từ bữa sáng đến bữa tối, và còn là thành phần chính trong nhiều món ăn. Nguyên liệu để làm ra những chiếc bánh ngon bao gồm: bột mì, đường, nước, men nở,... Với vị ngon và tính linh hoạt trong việc kết hợp với nhiều nguyên liệu khác nhau, bánh mì Whole Wheat Bun không chỉ là một món ăn cơ bản mà còn là một phần quan trọng của ẩm thực thế giới."
       },
       {
         "prid": "9",
         "image": "/img/shop/Banhmi/whole-wheat-dinner-roll.jpg",
         "label": "Bánh mì",
         "name": "whole wheat dinner roll",
-        "price": "34000"
+        "price": "34000",
+        "description": "Bánh mì Whole Wheat Dinner Roll là một loại bánh mì phổ biến với vỏ mềm mại, màu trắng tinh khôi và hương vị nhẹ nhàng. Loại bánh mì này thường được sử dụng trong nhiều biến thể của ẩm thực trên khắp thế giới, từ bữa sáng đến bữa tối, và còn là thành phần chính trong nhiều món ăn. Nguyên liệu để làm ra những chiếc bánh ngon bao gồm: bột mì, đường, nước, men nở,... Với vị ngon và tính linh hoạt trong việc kết hợp với nhiều nguyên liệu khác nhau, bánh mì Whole Wheat Dinner Roll không chỉ là một món ăn cơ bản mà còn là một phần quan trọng của ẩm thực thế giới."
       },
       {
         "prid": "10",
         "image": "/img/shop/Banhmi/whole-wheat-loaf.jpg",
         "label": "Bánh mì",
         "name": "whole wheat loaf",
-        "price": "42000"
+        "price": "42000",
+        "description": "Bánh mì Whole Wheat Loaf là một loại bánh mì trắng, mềm mại và phổ biến, thường được sử dụng trong nhiều món ăn khác nhau. Với vị ngon đơn giản và hương thơm tinh tế, bánh mì này thích hợp cho nhiều ứng dụng từ bữa sáng đến bữa tối. Nguyên liệu gồm: bột mì, nước, men nở, bơ, sữa, đường,... Với hương vị tinh tế và độ mềm mại, bánh mì Whole Wheat Loaf không chỉ là một lựa chọn ưa thích trong gia đình mà còn là một phần quan trọng của ẩm thực hàng ngày."
       },
       {
         "prid": "11",
         "image": "/img/shop/Banhmi/traditional-hamburger-bun.jpg",
         "label": "Bánh mì",
         "name": "traditional hamburger bun",
-        "price": "38000"
+        "price": "38000",
+        "description": "Bánh mì Traditional Hamburger Bun là một loại bánh mì đặc trưng được sử dụng rộng rãi để chế biến hamburger, một món ăn nổi tiếng trên khắp thế giới. Bánh mì này thường có hình dạng tròn, vỏ mềm mại và bên trong đủ đặc để chứa và hỗ trợ các thành phần của hamburger. Nguyên liệu gồm: bột mì, đường, dầu ăn, mè,bơ sữa,... Với vị trắng mềm mại và hương vị nhẹ nhàng, bánh mì hamburger này là một phần không thể thiếu của bữa ăn gia đình và là một biểu tượng của ẩm thực fast food truyền thống."
       },
       {
         "prid": "12",
         "image": "/img/shop/Banhmi/traditional-hot-dog-bun.jpg",
         "label": "Bánh mì",
         "name": "Traditional hot dog bun",
-        "price": "43000"
+        "price": "43000",
+        "description": "Bánh mì Traditional Hot Dog Bun là một loại bánh mì được thiết kế đặc biệt để đựng xúc xích, là thành phần chính của món hot dog. Bánh mì này thường có hình dạng hình ống, với bề mặt mềm mại và độ co giãn. Nguyên liệu để làm ra chiếc bánh thơm ngon này bao gồm: bột mì, nước, men nở, đường, bơ,... Với kích thước và hình dạng lý tưởng, bánh mì hot dog bun là một phần quan trọng của thực đơn fast food và thường là một lựa chọn yêu thích trong các sự kiện ngoại ô, hồ bơi, hoặc các buổi picnic."
       },
       {
         "prid": "13",
         "image": "/img/shop/Banhmi/traditional-slider-bun.jpg",
         "label": "Bánh mì",
         "name": "Traditional slider bun",
-        "price": "29000"
+        "price": "29000",
+        "description": "Bánh mì Traditional Slider Bun là một loại bánh mì nhỏ, tròn và mềm mại, thường được sử dụng cho các loại sandwich nhỏ gọn gọi là slider. Slider là một dạng hamburger nhỏ, thường được chế biến và ăn trong những dịp tiệc tùng, sự kiện, hoặc những buổi tụ tập gia đình. Với kích thước nhỏ gọn và vị mềm mại, bánh mì slider là một lựa chọn lý tưởng cho những dịp ăn nhẹ và hội tụ bạn bè. Với nguyên liệu là: bột mì, men nở, nước, đường, bơ,..."
       }
     ],
     "banhquy": [
@@ -105,63 +119,72 @@
         "image": "/img/shop/Banhquy/almond-salt-cookies.jpg",
         "label": "Bánh quy",
         "name": "almond salt cookies",
-        "price": "20000"
+        "price": "20000",
+        "description": "Bánh có vị ngọt xen lẫn hương thơm nhẹ nhàng của bơ và hạnh nhân. Khi thưởng thức, bạn sẽ cảm nhận rõ độ giòn, độ béo ngậy của bánh. Có thể kết hợp bánh với trà, để tăng thêm kích thích cho vị giác tạo cảm giác ngon miệng. Bánh Almond salt cookies được chế biến theo công thức độc quyền, với nguyên liệu chính bao gồm: Bột mì, bơ, đường, trứng gà, hạnh nhân. Ngoài ra, còn có một số hương liệu khác nhằm tăng thêm hương thơm cho bánh. Bánh được tạo hình vuông đơn giản, bắt mắt và đặc biệt giàu dinh dưỡng, tốt cho sức khỏe của người tiêu dùng. "
       },
       {
         "prid": "15",
         "image": "/img/shop/Banhquy/cigarette-cookies.jpg",
         "label": "Bánh quy",
         "name": "cigarette cookies",
-        "price": "18000"
+        "price": "18000",
+        "description": "Bánh Cigarette cookies có hương vị béo bùi của bơ và trứng gà, vị thơm ngọt ngào của chiết xuất vani. Khi ăn bánh, đầu tiên chính là cảm giác giòn rụm, tan dần vào trong miệng và để lại hậu vị ngọt ngào. Bánh phù hợp với cả người già và trẻ nhỏ bởi nguyên liệu đơn giản, dễ ăn. Nguyên liệu của bánh Cigarette cookies là những thứ rất truyền thống gồm bột mì, bơ, trứng gà cùng một chút hương vani. Điểm đặc biệt của bánh chính là tạo hình, bánh là dạng bánh quy mỏng được lấy cảm hứng từ những điếu xì gà. Màu sắc của những chiếc bánh Cigarette cookies thành công chính là màu vàng nâu ở viền bánh và vàng nhạt ở thân bánh."
       },
       {
         "prid": "16",
         "image": "/img/shop/Banhquy/coconut-rocher-cookies.jpg",
         "label": "Bánh quy",
         "name": "coconut rocher cookies",
-        "price": "26000"
+        "price": "26000",
+        "description": "Bánh Coconut Rocher cookies có vị ngọt nhẹ, không quá đậm để có thể ảnh hưởng đến sức khỏe người dùng. Kết hợp với đó là hương thơm thanh thanh, nhẹ nhàng từ bơ và dừa. Tất cả hòa quyện với nhau, để mang đến cảm giác ngon miệng khó cưỡng cho người dùng. Có thể ăn bánh với một tách trà yêu thích, đó là ý tưởng hay để tăng thêm hương vị cho bánh. Bánh Coconut Rocher cookies được chế biến theo công thức độc quyền, với thành phần chính bao gồm: Bột mì, bơ, đường, trứng gà, dừa sợi. Ngoài ra, còn có một số hương liệu khác để làm tăng hương vị của bánh. Bánh được tạo hình đơn giản, như những chiếc que ngắn và có màu vàng nâu, độ giòn vừa phải rất dễ ăn. "
       },
       {
         "prid": "17",
         "image": "/img/shop/Banhquy/dark-chocolate-cookies.jpg",
         "label": "Bánh quy",
         "name": "dark chocolate cookies",
-        "price": "19000"
+        "price": "19000",
+        "description": "Bánh Dark chocolate cookies có vị ngọt nhẹ, thanh thanh, kết hợp cùng hương thơm từ bơ. Bên cạnh đó, bánh cũng thơm mùi vị của socola để hấp dẫn vị giác của người dùng. Sau khi ăn bánh, bạn sẽ cảm thấy rõ sự ngọt ngào còn đọng lại trong miệng. Bánh có vị không quá ngọt, nên dù có ăn với số lượng tương đối cũng không gây khé cổ. Bánh Dark chocolate cookies được chế biến theo công thức đặc biệt, với nguyên liệu chính gồm: Bột mì, bơ, đường, trứng gà, socola. Bánh được tạo hình chữ nhật đơn giản, với kích thước vừa vặn và nhỏ nhắn, có màu nâu bắt mắt và đặc biệt bánh giòn, dễ ăn được người tiêu dùng ưa thích cao. "
       },
       {
         "prid": "18",
         "image": "/img/shop/Banhquy/delicacy-coconut-cookies.jpg",
         "label": "Bánh quy",
         "name": "delicacy coconut cookies",
-        "price": "23000"
+        "price": "23000",
+        "description": "Bánh Delicacy coconut cookies có vị ngọt nhẹ, không quá gắt, kết hợp cùng hương thơm đặc trưng của mày dừa. Tất cả tạo nên mùi vị khó cưỡng, không thể chối từ. Bánh có vị ngọt vừa, nên khi ăn với số lượng tương đối cũng không lo bị khé cổ. Bánh Delicacy coconut cookies được chế biến theo công thức độc quyền, với nguyên liệu chính bao gồm: Bột mì ,bơ,đường,trứng gà,mày dừa. Ngoài ra, còn có một số hương liệu khác để làm tăng thêm hương vị cho bánh. Ăn bánh vào mỗi buổi sáng, giúp cung cấp năng lượng tối thiểu cho cơ thể để học tập và làm việc may mắn, hiệu quả. "
       },
       {
         "prid": "19",
         "image": "/img/shop/Banhquy/gato-bass-mini.jpg",
         "label": "Bánh quy",
-        "name": "gato bass mini",
-        "price": "48000"
+        "name": "Palmier",
+        "price": "48000",
+        "description": "Bánh Palmier cookies có vị ngọt thanh cùng hương thơm nhẹ nhàng, béo ngậy từ bơ. Sự hòa quyện này góp phần mang đến hương vị khó cưỡng, khiến khách hàng không thể chối từ. Có thể kết hợp bánh với trà khi ăn để kích thích cho vị giác và tạo cảm giác ngon miệng. Bánh Palmier cookies được chế biến theo công thức đơn giản, với nguyên liệu chính bao gồm: Bột mì, bơ, đường, trứng gà. Ngoài ra, còn có một số hương, phụ liệu khác để làm tăng hương vị cho bánh. Bánh có màu nâu vàng nhạt, có độ giòn vừa phải và rất dễ ăn."
       },
       {
         "prid": "20",
         "image": "/img/shop/Banhquy/langdechat.jpg",
         "label": "Bánh quy",
         "name": "langdechat",
-        "price": "35000"
+        "price": "35000",
+        "description": "Hương vị bánh Langdechat cookies vô cùng quen thuộc bởi nguyên liệu của bánh là những thứ rất gần gũi. Bánh có độ ngọt vừa phải, bùi béo và giòn xốp đặc trưng. Khi ăn bánh, bạn sẽ cảm nhận theo từng tầng hương vị đen xen hòa quyện vào nhau, tan dần trong miệng và để lại dư vị vô cùng ngọt ngào. Loại bánh này phù hợp để ăn vặt hoặc ăn kết hợp uống trà chiều. Nguyên liệu chính của bánh Langue de chat cookies rất đơn giản gồm bột mì, trứng gà, bơ, đường, sữa tươi với tỷ lệ theo công thức đặc biệt của Nguyễn Sơn Bakery. Bánh được làm chín bằng cách nướng trong lò nướng bánh ở nhiệt độ cao với thời gian tiêu chuẩn để đem đến những chiếc bánh với vỏ ngoài vàng óng.        "
       },
       {
         "prid": "21",
         "image": "/img/shop/Banhquy/meringue-cookies.jpg",
         "label": "Bánh quy",
         "name": "meringue-cookies",
-        "price": "35000"
+        "price": "35000",
+        "description": "Bánh Meringue cookies có vị ngọt nhẹ cùng hương thơm đặc trưng. Ngay khi thả vào miệng, bánh lập tức tan chảy để lại dư vị ngọt ngào và mềm mại đầy lưu luyến. Bánh có vị ngọt không quá đậm, nên dù có ăn với lượng tương đối cũng không lo làm khé cổ. Có thể ăn kèm bánh với trà, đó là gợi ý hoàn hảo giúp chìm đắm trong sự thoải mái, bình yên và dịu nhẹ khó cưỡng. Bánh Meringue cookies được chế biến theo công thức đơn giản với các thành phần chính gồm: Đường icing,lòng trắng trứng gà. Ngoài ra, còn có thêm một số hương liệu khác để tạo nên mùi vị đặc trưng cho bánh. Bánh được tạo hình xoắn ốc đặc biệt với nhiều màu sắc khác nhau. Sử dụng bánh cho bữa sáng, đó là ý tưởng đặc biệt và tốt cho sức khỏe. "
       },
       {
         "prid": "22",
         "image": "/img/shop/Banhquy/red-velvet-cookies.jpg",
         "label": "Bánh quy",
         "name": "red velvet cookies",
-        "price": "48000"
+        "price": "48000",
+        "description": "Bánh Red velvet Cookies có vị ngọt thanh thanh, không quá gắt, kết hợp cùng hương thơm nhẹ nhàng từ bơ. Khi thưởng thức bánh, bạn sẽ cảm nhận được độ giòn của bánh, không quá cứng nhưng cũng không quá mềm. Đủ để làm vị giác của bạn cảm thấy “hào hứng”. Sau khi ăn, mùi vị của bánh sẽ còn đọng lại trong miệng của bạn. Bánh được chế biến theo công thức đặc biệt, với các nguyên liệu chính gồm: Bột mì, bơ, đường, trứng gà, bột đỏ. Ngoài ra, còn có một số loại hạt dinh dưỡng khác để tạo thêm sự lôi cuốn cho hương vị của bánh. Bánh có màu đỏ đặc trưng, giòn và vô cùng dễ ăn. "
       }
     ],
     "banhtheomua": [
@@ -170,56 +193,64 @@
         "image": "/img/shop/Banhtheomua/Cupcake.jpg",
         "label": "Bánh theo mùa",
         "name": "Cupcake",
-        "price": "32000"
+        "price": "32000",
+        "description": "Bánh Cupcake Halloween là một sự kết hợp tuyệt vời của sự sáng tạo và hứng thú trong việc tạo ra món tráng miệng phù hợp với không khí lễ hội Halloween. Những chiếc cupcake này thường được trang trí với các yếu tố và hình vẽ liên quan đến Halloween như ma, quái vật, rắn rết, hay các biểu tượng kinh điển như bí ngô và quả hồng. Bánh Cupcake Halloween có thể được sắp xếp trên đĩa hoặc khay trang trí để tạo thành một bàn ăn Halloween độc đáo. Bạn có thể sắp xếp chúng thành các hình dạng và biểu tượng liên quan đến Halloween để tạo ra không khí lễ hội thú vị và sáng tạo. Những chiếc bánh vừa ngon miệng vừa độc đáo chắc chắn sẽ làm cho bất kỳ bữa tiệc Halloween nào trở nên đặc sắc."
       },
       {
         "prid": "24",
         "image": "/img/shop/Banhtheomua/Donut.jpg",
         "label": "Bánh theo mùa",
         "name": "Donut",
-        "price": "32000"
+        "price": "32000",
+        "description": "Bánh Donut Halloween là một cách sáng tạo để thêm không khí lễ hội và vui nhộn vào bữa tiệc Halloween của bạn. Những chiếc donut được trang trí với các hình ảnh và màu sắc phù hợp với chủ đề Halloween, tạo ra một lựa chọn ngon miệng và độc đáo cho bàn ăn của bạn. Bánh Donut Halloween có thể được sắp xếp trên khay hoặc đĩa để tạo ra một bàn ăn Halloween sáng tạo. Bạn cũng có thể sắp xếp chúng theo các hình dạng và kịch bản khác nhau để tạo nên không khí lễ hội. Đặc biệt, những chiếc donut này sẽ làm cho bữa tiệc Halloween của bạn trở nên thú vị và độc đáo."
       },
       {
         "prid": "25",
         "image": "/img/shop/Banhtheomua/fingure-cookie.jpg",
         "label": "Bánh theo mùa",
         "name": "Fingure Cookie",
-        "price": "35000"
+        "price": "35000",
+        "description": "Bánh Finger Cookie là một loại bánh quy thú vị được thiết kế để giống như ngón tay phù thủy, làm cho chúng trở nên rất phù hợp để thưởng thức trong mùa Halloween. Chúng thường có hình dáng và trang trí giống như ngón tay thực sự, tạo nên một trải nghiệm thú vị và độc đáo. Bánh Finger Cookie thường được sắp xếp trên đĩa hoặc khay trình bày để tạo thành một phần không thể thiếu của bữa tiệc Halloween. Chúng là lựa chọn ngon miệng và mang tính giải trí cao, chắc chắn sẽ làm cho bất kỳ buổi tiệc nào trở nên thú vị hơn."
       },
       {
         "prid": "26",
         "image": "/img/shop/Banhtheomua/Roll-cake.jpg",
         "label": "Bánh theo mùa",
         "name": "Roll Cake",
-        "price": "48000"
+        "price": "48000",
+        "description": "Bánh roll cake, còn được biết đến như Swiss roll hay bánh bông lan cuộn, là một loại bánh mềm mại và nhẹ, thường có nhân hoặc kem bên trong. Bánh này có hình dạng cuộn tròn, tạo nên một cấu trúc lạ mắt và phù hợp cho nhiều loại nhân khác nhau. Đặc biệt trong dịp Halloween những chiếc bánh này sẽ được trang trí một cách độc đáo hơn nhưng cũng không kém phần ngon miệng. "
       },
       {
         "prid": "27",
         "image": "/img/shop/Banhtheomua/Noel1.jpg",
         "label": "Bánh theo mùa",
         "name": "Noel 1",
-        "price": "80000"
+        "price": "80000",
+        "description": "Bánh roll cake thiết kế theo chủ đề Noel là một sự kết hợp tuyệt vời giữa hương vị ngon miệng và không khí lễ hội. Dịp giáng sinh này La Favor mang đến nhiều mẫu bánh vô cùng đẹp mắt và ngon miệng. Bánh roll cake Noel thường được cắt thành từng miếng vừa phải và phục vụ như một món tráng miệng thú vị trong các bữa tiệc và sự kiện Noel. Hương vị thơm ngon và trang trí tinh tế giúp bánh trở thành điểm nhấn đặc sắc trong không khí lễ hội."
       },
       {
         "prid": "28",
         "image": "/img/shop/Banhtheomua/Noel2.jpg",
         "label": "Bánh theo mùa",
         "name": "Noel 2",
-        "price": "85000"
+        "price": "85000",
+        "description": "Bánh roll cake thiết kế theo chủ đề Noel là một sự kết hợp tuyệt vời giữa hương vị ngon miệng và không khí lễ hội. Dịp giáng sinh này La Favor mang đến nhiều mẫu bánh vô cùng đẹp mắt và ngon miệng. Bánh roll cake Noel thường được cắt thành từng miếng vừa phải và phục vụ như một món tráng miệng thú vị trong các bữa tiệc và sự kiện Noel. Hương vị thơm ngon và trang trí tinh tế giúp bánh trở thành điểm nhấn đặc sắc trong không khí lễ hội."
       },
       {
         "prid": "29",
         "image": "/img/shop/Banhtheomua/Noel3.jpg",
         "label": "Bánh theo mùa",
         "name": "Noel 3",
-        "price": "102000"
+        "price": "102000",
+        "description": "Bánh roll cake thiết kế theo chủ đề Noel là một sự kết hợp tuyệt vời giữa hương vị ngon miệng và không khí lễ hội. Dịp giáng sinh này La Favor mang đến nhiều mẫu bánh vô cùng đẹp mắt và ngon miệng. Bánh roll cake Noel thường được cắt thành từng miếng vừa phải và phục vụ như một món tráng miệng thú vị trong các bữa tiệc và sự kiện Noel. Hương vị thơm ngon và trang trí tinh tế giúp bánh trở thành điểm nhấn đặc sắc trong không khí lễ hội."
       },
       {
         "prid": "30",
         "image": "/img/shop/Banhtheomua/noel4.jpg",
         "label": "Bánh theo mùa",
         "name": "Noel 4",
-        "price": "95000"
+        "price": "95000",
+        "description": "Bánh roll cake thiết kế theo chủ đề Noel là một sự kết hợp tuyệt vời giữa hương vị ngon miệng và không khí lễ hội. Dịp giáng sinh này La Favor mang đến nhiều mẫu bánh vô cùng đẹp mắt và ngon miệng. Bánh roll cake Noel thường được cắt thành từng miếng vừa phải và phục vụ như một món tráng miệng thú vị trong các bữa tiệc và sự kiện Noel. Hương vị thơm ngon và trang trí tinh tế giúp bánh trở thành điểm nhấn đặc sắc trong không khí lễ hội."
       }
     ],
     "banhkhac":[
@@ -228,28 +259,32 @@
         "image": "/img/shop/Banhkhac/Chocolate_Chip.jpg",
         "label": "Bánh khác",
         "name": "Chocolate Chip",
-        "price": "40000"
+        "price": "40000",
+        "description": "Bánh mì ngọt Chocolate Chip, hay còn được biết đến là bánh mì ngọt với viên sô-cô-la, là một món tráng miệng thơm ngon và hấp dẫn. Viên sô-cô-la được thêm vào bột để tạo ra lớp chocolate chips, tạo nên sự ngon miệng và hấp dẫn cho mỗi miếng bánh. Bánh mì ngọt Chocolate Chip thường được phục vụ khi nóng hoặc nguội. Nó có thể là một lựa chọn tuyệt vời cho bữa sáng, giờ trà, hoặc những dịp chia sẻ. Bạn có thể thưởng thức nó như một món tráng miệng tuyệt vời, kèm theo một tách cà phê hoặc sữa."
       },
       {
         "prid": "32",
         "image": "/img/shop/Banhkhac/Gingerbread_Scone.jpg",
         "label": "Bánh khác",
         "name": "Gingerbread Scone",
-        "price": "42000"
+        "price": "42000",
+        "description": "Bánh Gingerbread Scone là loại bánh vô cùng hấp dẫn với sự kết hợp tuyệt vời giữa bánh mì xốp, mềm cùng với vụn dừa beo béo, thơm thơm thêm một lớp bơ trắng phía trên. Hương vị tuyệt vời khắc sâu vào tâm trí của khách hàng, đây là một trong những sản phẩm bán chạy nhất của La Favor. Chần chờ gì nữa hãy trải nghiệm thử bạn nhé!"
       },
       {
         "prid": "33",
         "image": "/img/shop/Banhkhac/WildBlueberry_CustardDanish.jpg",
         "label": "Bánh khác",
         "name": "Wild Blueberry Custard Danish",
-        "price": "55000"
+        "price": "55000",
+        "description": "Bánh Wild Blueberry Custard Danish là kết hợp hoàn hảo giữa bánh mì xốp, mềm cùng với mứt việt quất thơm ngon. Loại bánh mì kết hợp mứt này là sản phẩm được khách hàng khá ưa chuộng. Bạn có thể thưởng thức chiếc bánh thơm ngon này vào buổi trà chiều hoặc tụ hợp cùng bạn bè. "
       },
       {
         "prid": "34",
         "image": "/img/shop/Banhkhac/Mango-bun.jpg",
         "label": "Bánh khác",
         "name": "Mango Bun",
-        "price": "45000"
+        "price": "45000",
+        "description": "Bánh Mango Bun là sự lựa chọn tuyệt vời cho những khách hàng ưa thích xoài. Bánh được kết hợp với một lớp bơ thơm ngon, béo ngậy và trên cùng là lớp mứt xoài được La Favor tự làm thủ công luôn giữ được sự tươi mới và hương vị thơm ngon đến từ những quả xoài chín mộng. Đây là sự lựa chọn hoàn hảo cho một buổi trà chiều hoặc tụ họp cùng bạn bè. Thử ngay bạn nhé!"
       }
     ]
   }
