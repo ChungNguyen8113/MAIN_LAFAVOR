@@ -1,0 +1,126 @@
+.my-account-tab-menu.nav-tabs .nav-link.active,
+.my-account-tab-menu.nav-tabs .nav-link:hover {
+    background-color: #f08632;
+    border-color: #ff6565;
+    color: #fff;
+}
+
+.nav-link {
+    display: block;
+    padding: .5rem 1rem;
+}
+
+.my-account-tab-menu.nav-tabs .nav-link {
+    background-color: transparent;
+    border: 1px solid #e5e5e5;
+    border-bottom: none;
+    border-radius: 0;
+    color: #000;
+    font-size: 15px;
+    font-weight: 500;
+    display: block;
+    padding: 30px 15px;
+    text-align: left;
+    text-transform: capitalize;
+}
+
+.nav-tabs .nav-link:focus,
+.nav-tabs .nav-link:hover {
+    border-color: #e9ecef #e9ecef #dee2e6;
+    isolation: isolate;
+}
+
+.nav-tabs .nav-link {
+    margin-bottom: -1px;
+    background: none;
+    border: 1px solid transparent;
+    border-top-left-radius: .25rem;
+    border-top-right-radius: .25rem;
+}
+
+.nav-link:focus,
+.nav-link:hover {
+    color: #FFEFCD;
+}
+
+[type=button]:not(:disabled),
+[type=reset]:not(:disabled),
+[type=submit]:not(:disabled),
+button:not(:disabled) {
+    cursor: pointer;
+}
+
+.page-header-title {
+    font-size: 30px;
+    font-weight: 700;
+    color: #000;
+    margin-top: 20px;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+#AccountName {
+    font-size: 20px;
+    font-weight: 300;
+    color: #000;
+    margin-top: 20px;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.rounded-circle {
+    width: 300px;
+    height: 300px;
+}
+
+.profile .profile-card img {
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.profile-overview .row div {
+    margin-bottom: 20px;
+    font-size: medium;
+}
+
+.profile {
+    margin-top: 40px;
+}
+
+.profile .profile-card {
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.single-input-item input {
+    margin-left: 10px;
+}
+
+.single-input-item label {
+    width: 150px;
+}
+
+button {
+    background-color:#E09132;
+    color: #fff;
+    border-color: #E09132;
+}
+
+.info .row div {
+    margin-bottom: 20px;
+    font-size: medium;
+}
+
+legend {
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.tab-pane h3 {
+    margin-bottom: 30px;
+}
+
+.single-input-item {
+    margin-top: 1rem;
+}

@@ -5,7 +5,7 @@
     <meta charset="utf-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         
-        <title>Login</title>
+        <title>Account</title>
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="/img/hinh/favicon_io/favicon.ico"/>
         <!--Google Font-->
@@ -57,11 +57,16 @@
                                     <input type="password" id="pwdSignIn" name="passwordSignIn" placeholder="Mật khẩu" required>
                                 </div>
                                 <div class="pass-link" style="padding-top: 25px;">
-                                    <a href="#">Quên mật khẩu?</a>
+                                    <span><input type="checkbox"> Nhớ mật khẩu</span>
+                                    <span style="padding-left: 35%;"><a href="#">Quên mật khẩu?</a></span>
                                 </div>
                                 <div class="field btn">
                                     <div class="btn-layer" id="signIn">Đăng nhập</div>
 
+                                </div>
+                                <div class="signup-link">
+                                    <h6>Hoặc </h6>
+                                    <div class="bicolor bisize"><i class="bi bi-facebook"></i> &nbsp; <i class="bi bi-google"></i></div>                                    
                                 </div>
                                 <div class="signup-link">
                                     Chưa có tài khoản? <a href="">Đăng ký ngay</a>
@@ -77,8 +82,13 @@
                                 <div class="field">
                                     <input type="password" id="pwd" name="password" placeholder="Mật khẩu" required>
                                 </div>
+                                <div>&nbsp;</div>
                                 <div class="field btn">
                                     <div class="btn-layer" id="signUp">Đăng ký</div>
+                                </div>
+                                <div class="signup-link">
+                                    <h6>Hoặc </h6>
+                                    <div class="bicolor bisize"><i class="bi bi-facebook"></i> &nbsp; <i class="bi bi-google"></i></div>                                    
                                 </div>
                             </form>
                         </div>
@@ -102,73 +112,72 @@
     <script src="../js/owl.carousel.min.js"></script>
     <script src="../js/main.js"></script>
     <script src="../js/bootstrap.bundle.min.js"></script>
- <!--
     <script>
-        $(document).ready(function() {
-            var user = localStorage.getItem('account');
-            if (user != null) {
-                document.getElementById('dashboad').style.display = 'block';
-                var ele = document.getElementsByClassName('AccountName')
-                for (i = 0; i < ele.length; i++) {
-                    ele[i].innerHTML = user;
-                }
-            } else {
-                location.href = "account.html";
-            }
-        })
-        var cartTable = document.querySelector('#wishlist');
-        console.log(cartTable)
-        let item = ''
-            // const item = localStorage.getItem('product')
+        const loginText = document.querySelector(".title-text .login");
+        const loginForm = document.querySelector("form.login");
+        const loginBtn = document.querySelector("label.login");
+        const signupBtn = document.querySelector("label.signup");
+        const signupLink = document.querySelector("form .signup-link a");
 
-        var cartItems = JSON.parse(localStorage.getItem('cart'))
-        for (let i = 0; i < cartItems.length; i++) {
+        function turnSignup() {
+            loginForm.style.marginLeft = "-50%";
+            loginText.style.marginLeft = "-50%";
+        };
 
-            item += '<tr class="item product__wishlist__item"><td class="product__wishlist__item"><div class="product__cart__item__pic"><img src="../img/product/' + cartItems[i].prImage + '" alt=""></div><div class="product__cart__item__text"><h6 class="title">' + cartItems[i].prName + '</h6></td><td><h5 class="productTotal">' + cartItems[i].prPrice + '</h5></div></td></tr>'
-        }
-        var currentHtml = cartTable.innerHTML;
-        currentHtml += item
-        cartTable.innerHTML = currentHtml
-    </script>
-    <script>
-        function openTab(evt, tabName) {
-            var i, tabcontent, tablinks;
-            tabcontent = document.getElementsByClassName("tab-pane");
-            for (i = 0; i < tabcontent.length; i++) {
-                tabcontent[i].style.display = "none";
-            }
-            tablinks = document.getElementsByClassName("nav-link");
-            for (i = 0; i < tablinks.length; i++) {
-                tablinks[i].className = tablinks[i].className.replace(" active", "");
-            }
-            document.getElementById(tabName).style.display = "block";
-            evt.currentTarget.className += " active";
-        }
-    </script>-->
-    <!-- <script>
-        const btnTabItem = document.querySelectorAll(".nav-link");
-        btnTabItem.forEach((btn) => {
-            btn.addEventListener("click", function() {
-                btnTabItem.forEach((btn) => {
-                    btn.classList.remove("active");
-                });
-                this.classList.add("active");
-            });
+        function turnLogin() {
+            loginForm.style.marginLeft = "0%";
+            loginText.style.marginLeft = "0%";
+        };
+        signupLink.onclick = (() => {
+            signupBtn.click();
+            return false;
         });
-    </script> -->
-    <!--<script type="module">
-        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js"; import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-analytics.js"; import { getDatabase, set, ref } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-database.js";
-        import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, updateProfile } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-auth.js"; const firebaseConfig = { apiKey: "AIzaSyAIwU6gd89NJnFH0sAJGzE1XwCv9wGPQXQ", authDomain:
-        "freshie-uel.firebaseapp.com", databaseURL: "https://freshie-uel-default-rtdb.firebaseio.com", projectId: "freshie-uel", storageBucket: "freshie-uel.appspot.com", messagingSenderId: "665183320448", appId: "1:665183320448:web:d35d7291577c7276d12965",
-        measurementId: "G-N5D0L2ST2N" }; const app = initializeApp(firebaseConfig); const analytics = getAnalytics(app); const database = getDatabase(app); const auth = getAuth(app); logout.addEventListener('click', (e) => { alert("Đã đăng xuất"), auth.signOut();
-        localStorage.removeItem('account'); localStorage.removeItem('cart'); window.location.href = "user.html"; })
+    </script>
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-analytics.js";
+        import { getDatabase, set, ref } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-database.js";
+        import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword,updateProfile} from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js"; 
+        const firebaseConfig = { 
+          apiKey: "AIzaSyCmPNlg7yOTCYjxigzPFDsu9-Un9XSJZSo",
+          authDomain: "lafavor-2c8ce.firebaseapp.com",
+          databaseURL: "https://lafavor-2c8ce-default-rtdb.firebaseio.com",
+          projectId: "lafavor-2c8ce",
+          storageBucket: "lafavor-2c8ce.appspot.com",
+          messagingSenderId: "54093090557",
+          appId: "1:54093090557:web:6befa6f1d5480464b8f894",
+          measurementId: "G-WQZZWTVE7N"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+        const database = getDatabase(app);
+        const auth = getAuth(app); 
 
+        signUp.addEventListener('click', (e) =>{ var email = document.getElementById("email").value.trim();
+        var password = document.getElementById("pwd").value; 
+        var username = document.getElementById("username").value; 
+        createUserWithEmailAndPassword(auth, email, password) 
+        .then((userCredential)=> { const user = userCredential.user; 
+        set(ref(database,'users/'+ user.uid),{username:username,email:email});
 
-
-
-    </script>-->
-
-
+        updateProfile(auth.currentUser, { displayName: username }); 
+        document.getElementById(`inform`).innerHTML=`Đăng ký thành công! Mời bạn đăng nhập`;
+        turnLogin(); }) .catch((error) => { const errorCode = error.code;
+        const errorMessage = error.message; 
+        alert(error.code); });}); 
+        signIn.addEventListener('click', (e) =>{ var email = document.getElementById("emailSignIn").value.trim();
+        var password = document.getElementById("pwdSignIn").value; 
+        signInWithEmailAndPassword(auth,email, password) .then((userCredential)=> { 
+            const user = userCredential.user; 
+            if(user.displayName){localStorage.setItem('account',user.displayName)} 
+            else{localStorage.setItem('account',user.email)} ;
+        location.href='../index.html' }) .catch((error)=> { 
+            const errorCode = error.code; 
+            const errorMessage = error.message; alert(error.code); }); }); 
+            auth.onAuthStateChanged((user)=> { if (user) { console.log(user) } else { } });
+    
+      </script>
 </body>
-
 </html>

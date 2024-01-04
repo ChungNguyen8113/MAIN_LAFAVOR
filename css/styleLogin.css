@@ -194,6 +194,10 @@ form .btn:hover .btn-layer {
     color: #d88a42;
 }
 
+form input {
+    margin-left: 0px
+}
+
 form .btn input[type="submit"] {
     height: 100%;
     width: 100%;
@@ -207,4 +211,8 @@ form .btn input[type="submit"] {
     font-size: 20px;
     font-weight: 500;
     cursor: pointer;
+}
+
+.bisize {
+    font-size: 20pt
 }
