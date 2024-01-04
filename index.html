@@ -369,6 +369,14 @@
 </section>
 <!-- Product Section End -->
 
+<!--Product 2-->
+<!-- <section class="shop spad">
+    <div class="container">
+    <div class="row" id="productContainer"></div>
+    </div>
+</section> -->
+<!--Product end-->
+
 <!--Banner Section Begin-->
 <section class="banner">
     <div class="position-relative" style="background-image: url('img/hinh/banner/discount.png'); background-size: cover; background-position: center; height: 300px;">
@@ -643,6 +651,7 @@
 <script src="../js/owl.carousel.min.js"></script>
 <script src="../js/jquery.nicescroll.min.js"></script>
 <script src="../js/main.js"></script>
+<script src="../js/specialProduct.js"></script>
 
 <!--Script Begin-->
 <script>
@@ -658,7 +667,7 @@
         new_pr = "",
         deal_pr = "";
     var i;
-    var uri = "../json/ProductAll.json";
+    var uri = "../json/ProductCategory.json";
     let array = [];
     XMLHttp.onreadystatechange = function() {
         if (this.readyState == 4 & this.status == 200) {
@@ -689,7 +698,6 @@
         }
         document.getElementById("special").innerHTML = sp_pr;
     }
-    
 
 </script>
 <!--Script End-->
