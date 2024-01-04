@@ -113,7 +113,7 @@
                 <li class="nav-item dropdown nav-item-padding">
                     <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Menu</a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="Product.html">Tất cả các sản phẩm</a></li>
+                        <li><a class="dropdown-item" href="/src/Product.html">Tất cả các sản phẩm</a></li>
                         <li><a class="dropdown-item" href="/src/Product-Banhquy.html">Bánh Quy</a></li>
                         <li><a class="dropdown-item" href="/src/Product-Banhmy.html">Bánh Mỳ</a></li>
                         <li><a class="dropdown-item" href="/src/Product-Banhtheomua.html">Bánh Theo Mùa</a></li>
@@ -657,7 +657,7 @@
         new_pr = "",
         deal_pr = "";
     var i;
-    var uri = "../json/ProductAll.json";
+    var uri = "../json/ProductCategory.json";
     let array = [];
     XMLHttp.onreadystatechange = function() {
         if (this.readyState == 4 & this.status == 200) {
