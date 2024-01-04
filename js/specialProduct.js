@@ -57,6 +57,6 @@ document.addEventListener("DOMContentLoaded", function () {
         localStorage.setItem("productDetail", JSON.stringify(product));
 
         // Chuyển hướng đến trang chi tiết sản phẩm
-        location.href = "ProductDetail.html";
+        location.href = "/src/Productdetail.html";
     }
 });
