@@ -661,52 +661,13 @@
 <script src="../js/main.js"></script>
 <script src="../js/specialProduct.js"></script>
 <script src="../js/sanphamchitiet.js"></script>
+<script src="/js/firebase.js"></script>
 
 <!--Script Begin-->
 <script>
     $(function() {
         $('#footer').load('src/Footer.html');
     });
-</script>
-<script>
-    var XMLHttp = new XMLHttpRequest();
-    var html = "",
-        sp_pr = "",
-        new_pr = "",
-        deal_pr = "";
-    var i;
-    var uri = "../json/ProductCategory.json";
-    let array = [];
-    XMLHttp.onreadystatechange = function() {
-        if (this.readyState == 4 & this.status == 200) {
-            array = JSON.parse(this.responseText);
-            myFunction(array);
-            specialProduct(array);
-        }
-
-    }
-    XMLHttp.open("GET", uri, true);
-    XMLHttp.send();
-
-    function myFunction() {
-
-
-        for (i = 0; i < 3; i++) {
-            var sp = array[i];
-            html += "<div class='col-lg-4 col-md-6 col-sm-6'><div class='product__item'><div class='product__item__pic set-bg'" + sp.prImage + "' onClick=detail(" + i + ") ><img style='display: block;' src='../img/product/" + sp.prImage + "'><ul style='margin-top: 70px;' class='product__hover'><li><a href='#'><img src='../img/icon/heart.png'><span>Yêu thích</span></a></li><li><a href='#'><img src='../img/icon/search.png'><span onClick=detail('+ i + ')>Chi tiết</span></a></li></ul></div><div  class='product__item__text'><h6>" + sp.prName + "</h6><a href='#' class='add-cart'>+ Thêm vào giỏ hàng</a><div class='rating'><i class='fa fa-star' ></i> <i class='fa fa-star'></i> <i class='fa fa-star'></i> <i class='fa fa-star'></i> <i class='fa fa-star-o'></i></div><h5>" + sp.prPrice + "đ</h5><div class='product__color__select'><label for='pc-4'><input type='radio' id='pc-4'></label><label class='active black' for='pc-5'><input type='radio' id='pc-5'></label><label class='grey' for='pc-6'><input type='radio' id='pc-6'></label></div></div></div></div>"
-        }
-        document.getElementById("listProduct").innerHTML = html;
-    }
-
-    function specialProduct() {
-
-        for (i = 5; i < 14; i++) {
-            var item = array[i];
-            sp_pr += "<div class='col-lg-4 col-md-6 col-sm-6'><div class='product__item'><div class='product__item__pic set-bg'" + item.prImage + "' onClick=detail(" + i + ") ><img style='display: block;' src='../img/product/" + item.prImage + "'><ul style='margin-top: 70px;' class='product__hover'><li><a href='#'><img src='../img/icon/heart.png'><span>Yêu thích</span></a></li><li><a href='#'><img src='../img/icon/search.png'><span onClick=detail('+ i + ')>Chi tiết</span></a></li></ul></div><div  class='product__item__text'><h6>" + item.prName + "</h6><a href='#' class='add-cart'>+ Thêm vào giỏ hàng</a><div class='rating'><i class='fa fa-star' ></i> <i class='fa fa-star'></i> <i class='fa fa-star'></i> <i class='fa fa-star'></i> <i class='fa fa-star-o'></i></div><h5>" + item.prPrice + "đ</h5><div class='product__color__select'><label for='pc-4'><input type='radio' id='pc-4'></label><label class='active black' for='pc-5'><input type='radio' id='pc-5'></label><label class='grey' for='pc-6'><input type='radio' id='pc-6'></label></div></div></div></div>"
-        }
-        document.getElementById("special").innerHTML = sp_pr;
-    }
-
 </script>
 <!--Script End-->
 </body>

@@ -39,78 +39,120 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     </head>
     <body data-target=".navbar">
-    <!-- Header Section Begin -->
-    <header>
-        <!-- Offcanvas Menu Begin -->
-        <div class="container text-center header-font">
-            <span class="bicolor bi bi-geo-alt "></span> 02 Quốc lộ 1A, Phường Linh Xuân &nbsp; <span class="bicolor bi bi-telephone "></span> Đặt hàng: 1800.1000
+<!--Snow effect begin-->
+    <style>
+    /* customizable snowflake styling */
+    .snowflake {
+        color: #fff;
+        font-size: 1em;
+        font-family: Arial, sans-serif;
+        text-shadow: 0 0 5px #000;
+    }
+    
+    .snowflake,.snowflake .inner{animation-iteration-count:infinite;animation-play-state:running}@keyframes snowflakes-fall{0%{transform:translateY(0)}100%{transform:translateY(110vh)}}@keyframes snowflakes-shake{0%,100%{transform:translateX(0)}50%{transform:translateX(80px)}}.snowflake{position:fixed;top:-10%;z-index:9999;-webkit-user-select:none;user-select:none;cursor:default;animation-name:snowflakes-shake;animation-duration:3s;animation-timing-function:ease-in-out}.snowflake .inner{animation-duration:10s;animation-name:snowflakes-fall;animation-timing-function:linear}.snowflake:nth-of-type(0){left:1%;animation-delay:0s}.snowflake:nth-of-type(0) .inner{animation-delay:0s}.snowflake:first-of-type{left:10%;animation-delay:1s}.snowflake:first-of-type .inner,.snowflake:nth-of-type(8) .inner{animation-delay:1s}.snowflake:nth-of-type(2){left:20%;animation-delay:.5s}.snowflake:nth-of-type(2) .inner,.snowflake:nth-of-type(6) .inner{animation-delay:6s}.snowflake:nth-of-type(3){left:30%;animation-delay:2s}.snowflake:nth-of-type(11) .inner,.snowflake:nth-of-type(3) .inner{animation-delay:4s}.snowflake:nth-of-type(4){left:40%;animation-delay:2s}.snowflake:nth-of-type(10) .inner,.snowflake:nth-of-type(4) .inner{animation-delay:2s}.snowflake:nth-of-type(5){left:50%;animation-delay:3s}.snowflake:nth-of-type(5) .inner{animation-delay:8s}.snowflake:nth-of-type(6){left:60%;animation-delay:2s}.snowflake:nth-of-type(7){left:70%;animation-delay:1s}.snowflake:nth-of-type(7) .inner{animation-delay:2.5s}.snowflake:nth-of-type(8){left:80%;animation-delay:0s}.snowflake:nth-of-type(9){left:90%;animation-delay:1.5s}.snowflake:nth-of-type(9) .inner{animation-delay:3s}.snowflake:nth-of-type(10){left:25%;animation-delay:0s}.snowflake:nth-of-type(11){left:65%;animation-delay:2.5s}
+    </style>
+    <div class="snowflakes" aria-hidden="true">
+        <div class="snowflake">
+        <div class="inner">❅</div>
         </div>
-        <!-- Offcanvas Menu End -->       
-        
-        <!-- Header Section Begin -->
-            <!-- Navigation-->
-            <nav class="navbar navbar-expand-lg stick-top">
-                <div class="container">
-                    <a class="nav-link active navbar-brand" aria-current="page" href="index.html">
-                        <img src="/img/hinh/logo/logo.png" alt="Logo"  class="logo">
+        <div class="snowflake">
+        <div class="inner">❅</div>
+        </div>
+        <div class="snowflake">
+        <div class="inner">❅</div>
+        </div>
+        <div class="snowflake">
+        <div class="inner">❅</div>
+        </div>
+        <div class="snowflake">
+        <div class="inner">❅</div>
+        </div>
+        <div class="snowflake">
+        <div class="inner">❅</div>
+        </div>
+        <div class="snowflake">
+        <div class="inner">❅</div>
+        </div>
+        <div class="snowflake">
+        <div class="inner">❅</div>
+        </div>
+        <div class="snowflake">
+        <div class="inner">❅</div>
+        </div>
+        <div class="snowflake">
+        <div class="inner">❅</div>
+        </div>
+        <div class="snowflake">
+        <div class="inner">❅</div>
+        </div>
+        <div class="snowflake">
+        <div class="inner">❅</div>
+        </div>
+    </div>
+<!--Snow effect end-->
+            
+<!-- Header Section Begin -->
+<header>
+<!-- Offcanvas Menu Begin -->
+<div class="container text-center header-font">
+    <span class="bicolor bi bi-geo-alt "></span> 02 Quốc lộ 1A, Phường Linh Xuân &nbsp; <span class="bicolor bi bi-telephone "></span> Đặt hàng: 1800.1000
+</div>
+<!-- Offcanvas Menu End -->  
+<!-- Header Section Begin -->
+<!-- Navigation-->
+<nav class="navbar navbar-expand-lg stick-top">
+    <div class="container">
+        <a class="nav-link active navbar-brand" aria-current="page" href="index.html">
+            <img src="/img/hinh/logo/logo.png" alt="Logo"  class="logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="nav navbar-nav ms-auto mx-lg-5 py-0">
+                <li class="nav-item dropdown nav-item-padding">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Menu</a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="/src/Product.html">Tất cả các sản phẩm</a></li>
+                        <li><a class="dropdown-item" href="/src/Product-Banhquy.html">Bánh Quy</a></li>
+                        <li><a class="dropdown-item" href="/src/Product-Banhmy.html">Bánh Mỳ</a></li>
+                        <li><a class="dropdown-item" href="/src/Product-Banhtheomua.html">Bánh Theo Mùa</a></li>
+                        <li><a class="dropdown-item" href="/src/Product-Banhkhac.html">Sản Phẩm Khác</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item nav-item-padding"><a class="nav-link" href="/src/Blog.html">Blog</a></li>
+                <li class="nav-item nav-item-padding"><a class="nav-link" href="/src/About.html">Về chúng tôi</a></li>
+                <li class="nav-item nav-item-padding"><a class="nav-link" href="/src/Contact.html">Liên hệ</a></li>
+            </ul>  
+            <ul class="nav navbar-nav d-flex ms-auto">                   
+                <li class="nav-item">
+                    <a class="nav-link" href="/src/shoppingcart.html">
+                        <span class="bi bi-cart"></span>
                     </a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="nav navbar-nav ms-auto mx-lg-5 py-0">
-                            <li class="nav-item dropdown nav-item-padding">
-                                <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Menu</a>
-                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <li><a class="dropdown-item" href="/src/Product-Banhquy.html">Bánh Quy</a></li>
-                                    <li><a class="dropdown-item" href="/src/Product-Banhmy.html">Bánh Mỳ</a></li>
-                                    <li><a class="dropdown-item" href="/src/Product-Banhtheomua.html">Bánh Theo Mùa</a></li>
-                                    <li><a class="dropdown-item" href="/src/Product-Banhcombo.html">Combo</a></li>
-                                    <li><a class="dropdown-item" href="/src/Product-Banhkhac.html">Sản Phẩm Khác</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item nav-item-padding"><a class="nav-link" href="/src/Blog.html">Blog</a></li>
-                            <li class="nav-item nav-item-padding"><a class="nav-link" href="/src/About.html">Về chúng tôi</a></li>
-                            <li class="nav-item nav-item-padding"><a class="nav-link" href="/src/Contact.html">Liên hệ</a></li>
-                        </ul>  
-                        <ul class="nav navbar-nav d-flex ms-auto">                   
-                            <li class="nav-item">
-                                <a class="nav-link" href="/src/Cart.html">
-                                    <span class="bi bi-cart"></span>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/src/Account.html">
-                                    <span class="bi bi-person"></span>
-                                </a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link" id="navbarform" role="button" data-bs-toggle="dropdown" aria-expanded="false"><span class="bi bi-search"></span></a>
-                                <form class="dropdown-menu" aria-labelledby="navbarform">
-                                    <input class="form-control me-2" type="text" placeholder="Search">
-                                </form>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>                           
-            <!--Navigation End-->
-    </header>
-    <!-- Header Section End -->
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/src/Accountsetting.html">
+                        <span class="bi bi-person"></span>
+                    </a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link" id="navbarform" role="button" data-bs-toggle="dropdown" aria-expanded="false"><span class="bi bi-search"></span></a>
+                    <form class="dropdown-menu" aria-labelledby="navbarform">
+                        <input class="form-control me-2" type="text" placeholder="Search">
+                    </form>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>                           
+<!--Navigation End-->
+</header>
+<!-- Header Section End -->
 
-   <!-- Hero Section Begin -->
-   <section class="hero">
+<!-- Hero Section Begin -->
+<section class="hero">
     <div class="hero__slider owl-carousel">
         <div class="hero__item set-bg" data-setbg="img/hinh/hero/hero-1.png">
-            <div class="container">
-                <div class="row d-flex justify-content-center">
-                    <div class="col-lg-8">
-                        <div class="hero__text">
-                            <a href="./src/Product.html" class="primary-btn">Xem ngay!</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
     </div>
 </section>
@@ -124,32 +166,28 @@
             <div class="categories__slider owl-carousel">
                 <div class="categories__item">
                     <div class="categories__item__icon">
-                        <span class="flaticon-034-chocolate-roll"></span>
-                        <h5>Bánh mì</h5>
+                        <a href='/src/Product.html'><span class="flaticon-006-macarons"></span><h5>Tất cả</h5></a>
                     </div>
                 </div>
                 <div class="categories__item">
                     <div class="categories__item__icon">
-                        <span class="flaticon-030-cupcake-2"></span>
-                        <h5>Bánh quy</h5>
+                        <a href='/src/Product-Banhmy.html'><span class="flaticon-034-chocolate-roll"></span><h5>Bánh mì</h5></a>
                     </div>
                 </div>
                 <div class="categories__item">
                     <div class="categories__item__icon">
-                        <span class="flaticon-005-pancake"></span>
-                        <h5>Bánh theo mùa</h5>
+                        <a href='/src/Product-Banhquy.html'><span class="flaticon-030-cupcake-2"></span><h5>Bánh quy</h5></a>
                     </div>
                 </div>
                 <div class="categories__item">
                     <div class="categories__item__icon">
-                        <span class="flaticon-006-macarons"></span>
-                        <h5>Combo</h5>
+                        <a href='/src/Product-Banhtheomua.html'><span class="flaticon-005-pancake"></span><h5>Bánh theo mùa</h5></a>
                     </div>
                 </div>
+                
                 <div class="categories__item">
                     <div class="categories__item__icon">
-                        <span class="flaticon-029-cupcake-3"></span>
-                        <h5>Theo yêu cầu</h5>
+                        <a href='\src\Product-Banhkhac.html'><span class="flaticon-029-cupcake-3"></span><h5>Bánh khác</h5></a>
                     </div>
                 </div>
             </div>
@@ -171,7 +209,7 @@
                     </div>
                     <p>Mỗi chiếc bánh ở La Favor mang một vẻ riêng, từ hương vị đến cách trang trí. Hình thức giản dị chỉ với hai màu đen trắng làm chủ đạo nhưng chất lượng nhờ cách làm tinh tế và tỉ mỉ. </p>
                     <br/>
-                    <button type="submit" class="site-btn" onclick="window.location.href='about.html'">Xem thêm</button>
+                    <button type="submit" class="site-btn" onclick="window.location.href='/src/About.html'">Xem thêm</button>
                 </div>
             </div>
             <div class="col-lg-6 col-md-6">
@@ -186,11 +224,11 @@
 <!-- About Section End -->
 
 <!-- Product Section Begin -->
-<section class="product spad">
+<!-- <section class="product spad">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
-                <div class="section-title">
+                <div class="section-title-center">
                     <span>Nổi bật</span>
                     <h2>What's hot?</h2>
                 </div>
@@ -199,152 +237,171 @@
         <div class="row">
             <div class="col-lg-3 col-md-6 col-sm-6">
                 <div class="product__item">
-                    <div class="product__item__pic set-bg" data-setbg="img/shop/product-1.jpg">
+                    <div class="product__item__pic set-bg" data-setbg="/img/shop/Banhmi/white-bap.jpg">
                         <div class="product__label">
-                            <span>Cupcake</span>
+                            <span>Bánh mì</span>
                         </div>
                     </div>
+                    <br/>
                     <div class="product__item__text">
-                        <h6><a href="#">Dozen Cupcakes</a></h6>
-                        <div class="product__item__price">$32.00</div>
-                        <div class="cart_add">
-                            <a href="#">Add to cart</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-6">
-                <div class="product__item">
-                    <div class="product__item__pic set-bg" data-setbg="img/shop/product-2.jpg">
-                        <div class="product__label">
-                            <span>Cupcake</span>
-                        </div>
-                    </div>
-                    <div class="product__item__text">
-                        <h6><a href="#">Cookies and Cream</a></h6>
-                        <div class="product__item__price">$30.00</div>
-                        <div class="cart_add">
-                            <a href="#">Add to cart</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-6">
-                <div class="product__item">
-                    <div class="product__item__pic set-bg" data-setbg="img/shop/product-3.jpg">
-                        <div class="product__label">
-                            <span>Cupcake</span>
-                        </div>
-                    </div>
-                    <div class="product__item__text">
-                        <h6><a href="#">Gluten Free Mini Dozen</a></h6>
-                        <div class="product__item__price">$31.00</div>
-                        <div class="cart_add">
-                            <a href="#">Add to cart</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-6">
-                <div class="product__item">
-                    <div class="product__item__pic set-bg" data-setbg="img/shop/product-4.jpg">
-                        <div class="product__label">
-                            <span>Cupcake</span>
-                        </div>
-                    </div>
-                    <div class="product__item__text">
-                        <h6><a href="#">Cookie Dough</a></h6>
+                        <h6><a href="#">White bap</a></h6>
                         <div class="product__item__price">$25.00</div>
                         <div class="cart_add">
-                            <a href="#">Add to cart</a>
+                            <a href="#">Thêm vào giỏ hàng</a>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 col-sm-6">
                 <div class="product__item">
-                    <div class="product__item__pic set-bg" data-setbg="img/shop/product-5.jpg">
+                    <div class="product__item__pic set-bg" data-setbg="/img/shop/Banhmi/white-bun.jpg">
                         <div class="product__label">
-                            <span>Cupcake</span>
+                            <span>Bánh mì</span>
                         </div>
-                    </div>
+                    </div><br/>
                     <div class="product__item__text">
-                        <h6><a href="#">Vanilla Salted Caramel</a></h6>
+                        <h6><a href="#">White bun</a></h6>
                         <div class="product__item__price">$05.00</div>
                         <div class="cart_add">
-                            <a href="#">Add to cart</a>
+                            <a href="#">Thêm vào giỏ hàng</a>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 col-sm-6">
                 <div class="product__item">
-                    <div class="product__item__pic set-bg" data-setbg="img/shop/product-6.jpg">
+                    <div class="product__item__pic set-bg" data-setbg="/img/shop/Banhquy/cigarette-cookies.jpg">
                         <div class="product__label">
-                            <span>Cupcake</span>
+                            <span>Bánh quy</span>
+                        </div>
+                    </div><br/>
+                    <div class="product__item__text">
+                        <h6><a href="#">Cigarette cookies</a></h6>
+                        <div class="product__item__price">$31.00</div>
+                        <div class="cart_add">
+                            <a href="#">Thêm vào giỏ hàng</a>
                         </div>
                     </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="product__item">
+                    <div class="product__item__pic set-bg" data-setbg="/img/shop/Banhquy/almond-salt-cookies.jpg">
+                        <div class="product__label">
+                            <span>Bánh quy</span>
+                        </div>
+                    </div><br/>
                     <div class="product__item__text">
-                        <h6><a href="#">German Chocolate</a></h6>
+                        <h6><a href="#">Almond salt cookies</a></h6>
+                        <div class="product__item__price">$31.00</div>
+                        <div class="cart_add">
+                            <a href="#">Thêm vào giỏ hàng</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="product__item">
+                    <div class="product__item__pic set-bg" data-setbg="/img/shop/Banhquy/dark-chocolate-cookies.jpg">
+                        <div class="product__label">
+                            <span>Bánh quy</span>
+                        </div>
+                    </div><br/>
+                    <div class="product__item__text">
+                        <h6><a href="#">Dark chocolate cookies</a></h6>
+                        <div class="product__item__price">$05.00</div>
+                        <div class="cart_add">
+                            <a href="#">Thêm vào giỏ hàng</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="product__item">
+                    <div class="product__item__pic set-bg" data-setbg="/img/shop/Banhquy/red-velvet-cookies.jpg">
+                        <div class="product__label">
+                            <span>Bánh quy</span>
+                        </div>
+                    </div><br/>
+                    <div class="product__item__text">
+                        <h6><a href="#">Red velvet cookies</a></h6>
                         <div class="product__item__price">$14.00</div>
                         <div class="cart_add">
-                            <a href="#">Add to cart</a>
+                            <a href="#">Thêm vào giỏ hàng</a>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 col-sm-6">
                 <div class="product__item">
-                    <div class="product__item__pic set-bg" data-setbg="img/shop/product-7.jpg">
+                    <div class="product__item__pic set-bg" data-setbg="/img/shop/Banhquy/gato-bass-mini.jpg">
                         <div class="product__label">
-                            <span>Cupcake</span>
+                            <span>Bánh quy</span>
                         </div>
-                    </div>
+                    </div><br/>
                     <div class="product__item__text">
-                        <h6><a href="#">Dulce De Leche</a></h6>
+                        <h6><a href="#">gato bass mini</a></h6>
                         <div class="product__item__price">$32.00</div>
                         <div class="cart_add">
-                            <a href="#">Add to cart</a>
+                            <a href="#">Thêm vào giỏ hàng</a>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 col-sm-6">
                 <div class="product__item">
-                    <div class="product__item__pic set-bg" data-setbg="img/shop/product-8.jpg">
+                    <div class="product__item__pic set-bg" data-setbg="/img/shop/Banhquy/delicacy-coconut-cookies.jpg">
                         <div class="product__label">
-                            <span>Cupcake</span>
+                            <span>Bánh quy</span>
                         </div>
-                    </div>
+                    </div><br/>
                     <div class="product__item__text">
-                        <h6><a href="#">Mississippi Mud</a></h6>
+                        <h6><a href="#">Delicacy coconut cookies</a></h6>
                         <div class="product__item__price">$08.00</div>
                         <div class="cart_add">
-                            <a href="#">Add to cart</a>
+                            <a href="#">Thêm vào giỏ hàng</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</section>
+</section> -->
 <!-- Product Section End -->
+
+<!--Product 2-->
+    <section class="shop spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="section-title-center">
+                        <span>Nổi bật</span>
+                        <h2>What's hot?</h2>
+                    </div>
+                </div>
+            </div>
+        <div class="row" id="productContainer"></div>
+        </div>
+    </section>
+<!--Product end-->
 
 <!--Banner Section Begin-->
 <section class="banner">
-        <div style="background-image: url('img/hinh/banner/discount.png'); background-size: cover; background-position: center; height: 300px;">
-            <!-- Nội dung của div -->
+    <div class="position-relative" style="background-image: url('img/hinh/banner/discount.png'); background-size: cover; background-position: center; height: 300px;">
+        <!-- Nội dung của div -->
+        <div class="position-absolute top-50 start-50 translate-middle" style="background-color: rgba(230, 147, 50, 0.8); padding: 20px; border-radius:5px; text-align: center;">
+            <h2 class="fw-bold" style="font-size: 24px;text-transform: uppercase; color: #ffffff">Giảm giá mùa Giáng sinh lên đến 50%</h2>
+        </div>
     </div>
 </section>
 <!--Banner Section End-->
-
 
 <!-- Testimonial Section Begin -->
 <section class="testimonial spad">
 <div class="container">
     <div class="row">
         <div class="col-lg-12 text-center">
-            <div class="section-title">
+            <div class="section-title-center">
                 <span>Phản hồi</span>
                 <h2>Khách hàng nói gì về La Favor?</h2>
             </div>
@@ -489,7 +546,7 @@
 <div class="container">
     <div class="row">
         <div class="col-lg-12 text-center">
-            <div class="section-title">
+            <div class="section-title-center">
                 <span>Blog của chúng tôi</span>
                 <h2>Bài viết gần đây</h2>
             </div>
@@ -498,39 +555,37 @@
     <div class="row">
         <div class="col-lg-6">
             <div class="blog__item">
-                <div class="blog__item__pic set-bg" data-setbg="img/blog/blog-1.jpg">
+                <div class="blog__item__pic set-bg" data-setbg="/img/hinh/blog/moncheri-banh-su-kem-7.jpg">
                     <div class="blog__pic__inner">
-                        <div class="label">Công thức</div>
                         <ul>
-                            <li>Bởi <span>James Myers</span></li>
-                            <li>13 Nov 2020</li>
-                            <li>112 Lượt xem</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="blog__item__text">
-                    <h2>Bật mí cách làm bánh mì baguette Pháp giòn xốp, đặc ruột, thơm ngon</h2>
-                    <p>Bánh mì baguette với hình dáng hơi dài, thon nhỏ rất thích hợp ăn cùng các món như lagu hay chấm với các món có nước sốt đặc. Thật hấp dẫn phải không nào? Cách làm bánh này cũng khá đơn giản đấy, bạn đã tìm hiểu bao giờ chưa nhỉ? Hãy cùng tìm hiểu cách làm với La Favor nhé.</p>
-                    <a href="#">Đọc thêm</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-6">
-            <div class="blog__item">
-                <div class="blog__item__pic set-bg" data-setbg="img/blog/blog-2.jpg">
-                    <div class="blog__pic__inner">
-                        <div class="label">Công thức</div>
-                        <ul>
-                            <li>Bởi <span>James Myers</span></li>
-                            <li>13 Nov 2020</li>
+                            <li>By <span>La Favor</span></li>
+                            <li>25 Dec 2023</li>
                             <li>112 Views</li>
                         </ul>
                     </div>
                 </div>
                 <div class="blog__item__text">
-                    <h2>Cách làm bánh mì trái bơ mềm mịn,  bông xốp thơm ngon vô cùng dễ </h2>
-                    <p>Bánh mì bơ là một trong những loại bánh mì  được nhiều người yêu thích nhất. Bánh mì bơ mềm mịn, bông xốp, thơm mùi bơ, là một bữa ăn sáng hoặc ăn nhẹ vô cùng hấp dẫn. Bài viết dưới đây sẽ hướng dẫn bạn cách làm bánh mì bơ thơm ngon ngay tại nhà. Tham khảo ngay nhé!</p>
-                    <a href="#">Đọc thêm</a>
+                    <h2>Giới thiệu 10 loại bánh Giáng sinh nổi tiếng, không thể thiếu mỗi mùa Noel</h2>
+                    <p>Bánh Giáng sinh không chỉ đơn thuần là món ăn mà còn là biểu tượng của sự ấm áp, sum vầy và niềm vui gia đình. Những chiếc bánh này hấp dẫn với hình dạng độc đáo, hương vị thơm ngon và màu sắc đẹp mắt. Cùng tìm hiểu một số loại bánh nổi tiếng và không thể thiếu trong mùa Noel trong bài viết này nhé!</p>
+                    <a href="/blog/blogdetail2.html" target="_blank">Đọc thêm</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <div class="blog__item">
+                <div class="blog__item__pic set-bg" data-setbg="/img/hinh/blog/banhmihanhnhaan.jpg">
+                    <div class="blog__pic__inner">
+                        <ul>
+                            <li>By <span>La Favor</span></li>
+                            <li>24 Dec 2023</li>
+                            <li>110 Views</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="blog__item__text">
+                    <h2>Cách làm bánh mì hạnh nhân siêu ngon có thể bạn chưa biết</h2>
+                    <p>Bánh mì hạnh nhân là một loại bánh ngọt phổ biến được làm từ các thành phần như hạt hạnh nhân, bơ, đường, và một số nguyên liệu khác. Đây là một món ăn ngon và giàu chất dinh dưỡng, thường được ưa chuộng trong các buổi sáng, chiều tối, hoặc như một món tráng miệng. Hãy cùng với La Favor lăn vào bếp và học cách làm bánh hạnh nhân siêu ngon ngay trong bài viết này nhé!</p>
+                    <a href="/blog/blogdetail1.html" target="_blank">Đọc thêm</a>
                 </div>
             </div>
         </div>
@@ -604,12 +659,13 @@
 <script src="../js/owl.carousel.min.js"></script>
 <script src="../js/jquery.nicescroll.min.js"></script>
 <script src="../js/main.js"></script>
+<script src="../js/specialProduct.js"></script>
+<script src="../js/sanphamchitiet.js"></script>
 
 <!--Script Begin-->
 <script>
     $(function() {
         $('#footer').load('src/Footer.html');
-
     });
 </script>
 <script>
@@ -619,7 +675,7 @@
         new_pr = "",
         deal_pr = "";
     var i;
-    var uri = "../json/ProductAll.json";
+    var uri = "../json/ProductCategory.json";
     let array = [];
     XMLHttp.onreadystatechange = function() {
         if (this.readyState == 4 & this.status == 200) {
@@ -650,6 +706,7 @@
         }
         document.getElementById("special").innerHTML = sp_pr;
     }
+
 </script>
 <!--Script End-->
 </body>

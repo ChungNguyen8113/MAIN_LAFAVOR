@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>LaFavor</title>
+        <title>Sản phẩm</title>
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="/img/hinh/favicon_io/favicon.ico"/>
         <!--Google Font-->
@@ -27,13 +27,12 @@
             <span class="bicolor bi bi-geo-alt "></span> 02 Quốc lộ 1A, Phường Linh Xuân &nbsp; <span class="bicolor bi bi-telephone "></span> Đặt hàng: 1800.1000
         </div>
         <!-- Offcanvas Menu End -->       
-        
         <!-- Header Section Begin -->
             <!-- Navigation-->
             <nav class="navbar navbar-expand-lg stick-top">
                 <div class="container">
                     <a class="nav-link active navbar-brand" aria-current="page" href="/index.html">
-                        <img src="/img/hinh/logo/logo.png" alt="Logo"  class="logo">
+                        <img src="/img/hinh/favicon_io/Asset 6@500x 1.png" alt="Logo"  class="logo">
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
@@ -43,10 +42,10 @@
                             <li class="nav-item dropdown nav-item-padding">
                                 <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Menu</a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="Product.html">Tất cả các sản phẩm</a></li>
                                     <li><a class="dropdown-item" href="Product-Banhquy.html">Bánh Quy</a></li>
                                     <li><a class="dropdown-item" href="Product-Banhmy.html">Bánh Mỳ</a></li>
                                     <li><a class="dropdown-item" href="Product-Banhtheomua.html">Bánh Theo Mùa</a></li>
-                                    <li><a class="dropdown-item" href="Product-Banhcombo.html">Combo</a></li>
                                     <li><a class="dropdown-item" href="Product-Banhkhac.html">Sản Phẩm Khác</a></li>
                                 </ul>
                             </li>
@@ -56,8 +55,9 @@
                         </ul>   
                         <ul class="nav navbar-nav d-flex ms-auto">                   
                             <li class="nav-item">
-                                <a class="nav-link" href="Cart.html">
+                                <a class="nav-link" href="shoppingcart.html">
                                     <span class="bi bi-cart"></span>
+                                    <span id="cart-number">0</span>
                                 </a>
                             </li>
                             <li class="nav-item">
@@ -77,72 +77,13 @@
             </nav>                           
             <!--Navigation End-->
         <!-- Header Section End -->
-   <!-- Breadcrumb Begin -->
-   <div class="breadcrumb-option">
-    <div class="container">
-        <div class="row">
-                <div class="breadcrumb__links">
-                    <a href="../index.html">Menu</a>
-                    <a href="Product.html">Sản phẩm</a>
-                    <span>White Flour Loaf</span>
-        </div>
+
+
+    <div id="productDetailContainer">
+        <!-- Hiển thị thông tin chi tiết sản phẩm ở đây -->
     </div>
-</div>
-<!-- Breadcrumb End -->
-    <!-- Shop Details Section Begin -->
-    <section class="product-details spad">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-7">
-                    <div class="product__details__img">
-                        <div class="product__details__big__img">
-                            <img class="big_img" src="/img/hinh/product/white flour loaf.png" alt="" height="400">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-5">
-                    <div class="product__details__text">
-                        <h4>White Flour Loaf</h4>
-                        <h6>30.000 đ - 60.000 đ</h6>
-                        <h5>Kích thước
-                            <div class="options_size">
-                                <input type="button" id="size_nho" value="nhỏ">
-                                <input type="button" id="size_vua" value="vừa">
-                                <input type="button" id="size_lon" value="lớn">
-                            </div>
-                        </h5>
-                        <h5>Thêm
-                            <div class="options_topping">
-                                <input type="button" id="size_nho" value="hạt hạnh nhân">
-                                <input type="button" id="size_nho" value="hạt óc chó"> <br/>
-                                <input type="button" id="size_nho" value="nho khô">
-                                <input type="button" id="size_nho" value="hạt điều"> <br/>
-                                <input type="button" id="size_nho" value="hạt chocolate">
-                            </div>
-                            
-                        </h5>
-                        <div class="product__details__option">
-                            <a href="#" class="add_btn">Thêm vào giỏ</a>
-                            <a href="#" class="order_btn">Đặt hàng ngay</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="product__details__tab">
-                <div class="col-lg-12">
-                    <hr/>
-                    <h4><b>Mô tả sản phẩm</b></h4>
-                    <div class="tab-content">
-                            <p><b><i>Thành phần:</i></b> Bột mì, nước, muối i-ốt, men, dầu thực vật (cải dầu), bột đậu nành, Vitamin (Thiamin, Axit Folic).</p>
-                            <p><b><i>Sản phẩm có chứa:</i></b>  Lúa mì, Gluten & Đậu nành. </p>
-                            <p><b><i>White Flour Loaf </i></b>làm từ nguyên hạt lúa mì xay mịn ra hay còn được gọi là bột mì nguyên cám. Bột mì nguyên cảm có màu nâu nhạt vì có cả phần màu nâu của cám được nghiền cùng. Whole wheat flour có hàm lượng protein (14%) cao hơn so với bột mì trắng (~ 11.7%). </p>
-                    </div>
-                    <hr/>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Shop Details Section End -->
+    
+    <script src="/js/sanphamchitiet.js"></script>
 
     <!-- Related Products Section Begin -->
     <div class="container text-center">
@@ -153,18 +94,19 @@
                 </div>
             </div>
         </div>
+        
         <div class="row">
-          <div class="col-md-2 col-sm-4 col-6">
+          <div class="col-md-2 col-sm-4 col-6 related-product-item" data-product-id="4">
             <div>
                 <img src="/img/hinh/product/farmers loaf.png" class="w-100 p-3">
                 <div class="product__item__text">
                     <h6><a href="#">Farmers loaf</a></h6>
-                    <div class="product__item__price">30 000 đ</div>
+                    <div class="product__item__price">40 000 đ</div>
                 </div>
             </div>
           </div>
 
-          <div class="col-md-2 col-sm-4 col-6">
+          <div class="col-md-2 col-sm-4 col-6 related-product-item" data-product-id="2">
             <div >
                 <img src="/img/hinh/product/white bun.png" class="w-100 p-3">
                 <div class="product__item__text">
@@ -174,7 +116,7 @@
             </div>
           </div>
 
-          <div class="col-md-2 col-sm-4 col-6">
+          <div class="col-md-2 col-sm-4 col-6 related-product-item">
             <div >
                 <img src="/img/hinh/product/Gingerbread Scone.png" class="w-100 p-3">
                 <div class="product__item__text">
@@ -184,7 +126,7 @@
             </div>
           </div>
 
-          <div class="col-md-2 col-sm-4 col-6">
+          <div class="col-md-2 col-sm-4 col-6 related-product-item">
             <div >
                 <img src="/img/hinh/product/whole wheat.png" class="w-100 p-3">
                 <div class="product__item__text">
@@ -194,7 +136,7 @@
             </div>
           </div>
 
-          <div class="col-md-2 col-sm-4 col-6">
+          <div class="col-md-2 col-sm-4 col-6 related-product-item">
             <div >
                 <img src="/img/hinh/product/white hot dog bun.png" class="w-100 p-3">
                 <div class="product__item__text">
@@ -204,7 +146,7 @@
             </div>
           </div>
 
-          <div class="col-md-2 col-sm-4 col-6">
+          <div class="col-md-2 col-sm-4 col-6 related-product-item">
             <div >
                 <img src="/img/hinh/product/Wild Blueberry & Custard Danish.png" class="w-100 p-3">
                 <div class="product__item__text">
@@ -235,7 +177,7 @@
                     <div class="col-lg-4 col-md-6 col-sm-6">
                         <div class="footer__about">
                             <div class="footer__logo">
-                                <a href="#"><img src="/img/Hinh\logo\logo.png" alt="logo" class="logo"></a>
+                                <a href="/index.html"><img src="/img/hinh/favicon_io/Asset 6@500x 1.png" alt="logo" class="logo"></a>
                             </div>
                             <p>Thương hiệu bánh Pháp hàng đầu Lafavor cam kết mang lại trải nghiệm tuyệt vời nhất đến với khách hàng.</p>                            
                         </div>
@@ -257,7 +199,43 @@
         </div>
     </footer>
     <!--Navigation Footer End-->
+    <!-- ... (Các liên kết sản phẩm khác) ... -->
 
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll('.related-product-item').forEach(productItem => {
+        productItem.addEventListener('click', function(event) {
+            event.preventDefault();
+            console.log('Click event triggered!');
 
+            // Lấy ID sản phẩm từ thuộc tính data-product-id của phần tử sản phẩm
+            const productId = this.getAttribute('data-product-id');
+
+            // Tạo đường dẫn đến tệp JSON
+            const jsonFilePath = "/json/ProductCategory.json";
+
+            // Thực hiện yêu cầu mạng để lấy dữ liệu từ tệp JSON
+            fetch(jsonFilePath)
+                .then(response => response.json())
+                .then(productData => {
+                    // Kiểm tra xem có thông tin sản phẩm không
+                    if (productData[productId]) {
+                        // Lưu thông tin chi tiết sản phẩm vào Local Storage
+                        localStorage.setItem("productDetail", JSON.stringify(productData[productId]));
+
+                        // Chuyển hướng đến trang chi tiết sản phẩm
+                        location.href = "ProductDetail.html";
+                    } else {
+                        console.error('Product not found with ID:', productId);
+                    }
+                })
+                .catch(error => {
+                    console.error('Error fetching JSON data:', error);
+                });
+        });
+    });
+});
+</script>
+    
     </body>
 </html>

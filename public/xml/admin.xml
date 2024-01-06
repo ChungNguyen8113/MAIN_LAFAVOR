@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<admin>
+    <member>
+        <name>Hồ Lan Anh</name>
+        <position>Quản lý</position>
+        <email>anhhl21411@st.uel.edu.vn</email>
+        <id>K214110784</id>
+    </member>
+    <member>
+        <name>Nguyễn Thị Mai Bình</name>
+        <position>Quản lý</position>
+        <email>binhntm21411@st.uel.edu.vn</email>
+        <id>K214110788</id>
+    </member>
+    <member>
+        <name>Nguyễn Thị Chung</name>
+        <position>Quản lý</position>
+        <email>chungnt21411@st.uel.edu.vn</email>
+        <id>K214110789</id>
+    </member>
+    <member>
+        <name>Trần Thị Thùy Dung</name>
+        <position>Quản lý</position>
+        <email>dungttt21411@st.uel.edu.vn</email>
+        <id>K214110790</id>
+    </member>
+    <member>
+        <name>Phạm Trương Thu Đông</name>
+        <position>Quản lý</position>
+        <email>dongptt21411@st.uel.edu.vn</email>
+        <id>K214110794</id>
+    </member>
+</admin>

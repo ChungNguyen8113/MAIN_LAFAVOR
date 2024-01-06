@@ -129,9 +129,9 @@
         }
         
         button {
-            background-color: #850026;
+            background-color: #E5902D;
             color: #fff;
-            border-color: #850026;
+            border-color: #E5902D;
         }
         
         .info .row div {
@@ -151,15 +151,29 @@
         .single-input-item {
             margin-top: 1rem;
         }
+        .panels {
+            border: 2px  #E5902D;
+            display: flex;
+            text-align: center;
+            width: 100%;
+            justify-content: space-around;
+            padding-top: 5%;
+            padding-bottom: 2%;
+        }
+        .panel {
+            width: 280px;
+            height: 150px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            border-radius: 8px;
+            border: 1px solid #E5902D;
+            padding: 10px;
+        }
     </style>
 </head>
 
 <body>
-    <!-- Page Preloder -->
-    <div id="preloder">
-        <div class="loader"></div>
-    </div>
-
     <!-- Header Section Begin -->
     <header>
         <div id="header"></div>
@@ -174,7 +188,7 @@
                     <div class="col-md-5">
                         <div class="page-header-st3-content text-center text-md-start">
 
-                            <h2 class="page-header-title">Tài khoản của tôi</h2>
+                            <img class="page-header-title" src="/img/hinh/favicon_io/Asset 6@500x 1.png" style="width: 50%;">
                         </div>
                     </div>
                 </div>
@@ -188,114 +202,117 @@
                 <div class="row">
                     <div class="col-lg-3 col-md-4">
                         <div class="my-account-tab-menu nav nav-tabs" id="nav-tab" role="tablist">
-                            <button class="nav-link active" id="dashboad-tab" data-bs-toggle="tab" data-bs-target="#dashboad" type="button" role="tab" aria-controls="dashboad" aria-selected="true" onclick="openTab(event, 'dashboad')">Thông tin</button>
-                            <button class="nav-link" id="orders-tab" data-bs-toggle="tab" data-bs-target="#orders" type="button" role="tab" aria-controls="orders" aria-selected="false" onclick="openTab(event, 'orders')"> Đơn hàng</button>
-                            <button class="nav-link" id="download-tab" data-bs-toggle="tab" data-bs-target="#download" type="button" role="tab" aria-controls="download" aria-selected="false" onclick="openTab(event, 'download')">Yêu thích</button>
-                            <button class="nav-link" id="payment-method-tab" data-bs-toggle="tab" data-bs-target="#payment-method" type="button" role="tab" aria-controls="payment-method" aria-selected="false" onclick="openTab(event, 'payment-method')">Phương thức thanh
-                                toán</button>
-                            <button class="nav-link" id="address-edit-tab" data-bs-toggle="tab" data-bs-target="#address-edit" type="button" role="tab" aria-controls="address-edit" aria-selected="false" onclick="openTab(event,'address-edit')">Địa chỉ</button>
-                            <button class="nav-link" id="account-info-tab" data-bs-toggle="tab" data-bs-target="#account-info" type="button" role="tab" aria-controls="account-info" aria-selected="false" onclick="openTab(event,'account-info')">Cài đặt tài khoản</button>
+                            <button class="nav-link active" id="dashboad-tab" data-bs-toggle="tab" data-bs-target="#dashboad" type="button" role="tab" aria-controls="dashboad" aria-selected="true" onclick="openTab(event, 'dashboad')">Dashboard</button>
+                            <button class="nav-link" id="orders-tab" data-bs-toggle="tab" data-bs-target="#orders" type="button" role="tab" aria-controls="orders" aria-selected="false" onclick="openTab(event, 'orders')">Đơn hàng</button>
+                            <button class="nav-link" id="download-tab" data-bs-toggle="tab" data-bs-target="#download" type="button" role="tab" aria-controls="download" aria-selected="false" onclick="openTab(event, 'download')">Sản phẩm</button>
+                            <button class="nav-link" id="blog-tab" data-bs-toggle="tab" data-bs-target="#blog" type="button" role="tab" aria-controls="blog" aria-selected="false" onclick="openTab(event, 'blog')">Blog</button>
+                            <button class="nav-link" id="account-info-tab" data-bs-toggle="tab" data-bs-target="#account-info" type="button" role="tab" aria-controls="account-info" aria-selected="false" onclick="openTab(event,'account-info')">Setting</button>
                             <button class="nav-link" id="logout" type="button">Đăng xuất</button>
                         </div>
                     </div>
                     <div class="col-lg-9 col-md-8">
+                        <div class="row">
+                            <div style="padding: 20px; border: 3px grey;"><input type="text" placeholder="Tìm kiếm"  class="col-lg-9 col-md-8">&nbsp;<button class=" col-lg-1 col-md-1 bi bi-search"></button></div>
+                        </div>
+                        <div class="row">
                         <div class="tab-content" id="nav-tabContent">
                             <div class="tab-pane show" id="dashboad" role="tabpanel" aria-labelledby="dashboad-tab">
-                                <div class="myaccount-content">
-                                    <h3>Thông tin tài khoản</h3>
-                                    <section class="section profile">
-                                        <div class="row">
-                                            <div class="col-xl-6">
-                                                <div class="card">
-                                                    <div class="card-body profile-card pt-4 d-flex flex-column align-items-center">
-                                                        <img src="https://images.unsplash.com/photo-1440589473619-3cde28941638?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" alt="Profile" class="rounded-circle">
-                                                        <h3 class="AccountName"></h3>
-                                                        <div class="social-links mt-2">
-                                                            <a href="#" class="twitter"><i
-                                                                    class="bi bi-twitter"></i></a>
-                                                            <a href="#" class="facebook"><i
-                                                                    class="bi bi-facebook"></i></a>
-                                                            <a href="#" class="instagram"><i
-                                                                    class="bi bi-instagram"></i></a>
-                                                            <a href="#" class="linkedin"><i
-                                                                    class="bi bi-linkedin"></i></a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                            </div>
-                                            <div class="col-xl-6 info">
-
-                                                <div>
-
-                                                    <div class="row">
-                                                        <div class="col-lg-3 col-md-4 label">Tên</div>
-                                                        <div class="col-lg-9 col-md-8 AccountName">Kevin Anderson</div>
-                                                    </div>
-
-                                                    <div class="row">
-                                                        <div class="col-lg-3 col-md-4 label">Địa chỉ</div>
-                                                        <div class="col-lg-9 col-md-8">Tô Vĩnh Diện, Đông Hoà, Dĩ An, Bình Dương</div>
-                                                    </div>
-
-                                                    <div class="row">
-                                                        <div class="col-lg-3 col-md-4 label">Số điện thoại</div>
-                                                        <div class="col-lg-9 col-md-8">(84) 486-3538 x29071</div>
-                                                    </div>
-
-                                                    <div class="row">
-                                                        <div class="col-lg-3 col-md-4 label">Email</div>
-                                                        <div class="col-lg-9 col-md-8 "><span class="AccountName"></span><span>@gmail.com</span></div>
-                                                    </div>
-
-                                                </div>
-
-                                                <!-- End Bordered Tabs -->
-
-                                            </div>
+                                <div class="myaccount-content">                                    
+                                    <div class="panels">
+                                        <div class="panel">
+                                            <p>Đơn hàng</p>
+                                            <p><b>1000</b></p>   
+                                                                                       
                                         </div>
-                                    </section>
-
+                                        <div class="panel">
+                                            <p>Doanh thu</p>
+                                            <p><b>5M</b></p>
+                                        </div>
+                                        <div class="panel">
+                                            <p>Khách hàng</p>
+                                            <p><b>600</b></p>
+                                        </div>
+                                    </div>
+                                    <div class="panels">
+                                        <div class="panel" style="width: 45%;">
+                                            <p>Đơn giao thành công</p>
+                                            <p><b>800</b></p>
+                                        </div>
+                                        <div class="panel" style="width: 45%;">
+                                            <p>Đơn đang vận chuyển</p>
+                                            <p><b>200</b></p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             <div class="tab-pane" id="orders" role="tabpanel" aria-labelledby="orders-tab">
                                 <div class="myaccount-content">
-                                    <h3>Orders</h3>
+                                    <Button class="bi bi-plus">Thêm Đơn</Button>
                                     <div class="myaccount-table table-responsive text-center">
-                                        <table class="table table-bordered">
+                                        <table class="table table-bordered" align="center">
                                             <thead class="thead-light">
                                                 <tr>
-                                                    <th>Mã đơn hàng</th>
-                                                    <th>Ngày</th>
-                                                    <th>Tình trạng</th>
-                                                    <th>Tổng tiền</th>
-                                                    <th>Xem</th>
+                                                    <th>&nbsp</th>
+                                                    <th>Mã</th>
+                                                    <th>Ngày tạo</th>
+                                                    <th>Khách hàng</th>
+                                                    <th>Mã sản phẩm</th>
+                                                    <th>Thanh toán</th>
+                                                    <th>Trạng thái</th>
+                                                    <th>Tổng tiền</th>                                                    
                                                 </tr>
                                             </thead>
                                             <tbody>
                                                 <tr>
-                                                    <td>DH11783H</td>
-                                                    <td>23/12/2022</td>
-                                                    <td>Đang chuẩn bị</td>
-                                                    <td>1.253.000đ</td>
-                                                    <td><a href="shop-cart.html" class="check-btn sqr-btn ">View</a>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>DH11783H</td>
-                                                    <td>20/12/2022</td>
+                                                    <td><input type="checkbox"> </td>
+                                                    <td>#130422</td>
+                                                    <td>01/01/2024</td>
+                                                    <td>Hồ Lan Anh</td>
+                                                    <td>2</td>
+                                                    <td>COD</td>
                                                     <td>Đang giao</td>
-                                                    <td>800.000đ</td>
-                                                    <td><a href="shop-cart.html" class="check-btn sqr-btn ">View</a>
-                                                    </td>
+                                                    <td>100000 <u>đ</u></td>
+                                                    
                                                 </tr>
                                                 <tr>
-                                                    <td>DH11783H</td>
-                                                    <td>23/12/2022</td>
+                                                    <td><input type="checkbox"> </td>
+                                                    <td>#120113</td>
+                                                    <td>02/01/2024</td>
+                                                    <td>Nguyễn Thị Mai Bình</td>
+                                                    <td>2</td>
+                                                    <td>MOMO</td>
+                                                    <td>Chờ xác nhận</td>
+                                                    <td>85000 <u>đ</u></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><input type="checkbox"> </td>
+                                                    <td>#120114</td>
+                                                    <td>03/01/2024</td>
+                                                    <td>Nguyễn Thị Chung</td>
+                                                    <td>3</td>
+                                                    <td>Vietcombank</td>
+                                                    <td>Đang chuẩn bị</td>
+                                                    <td>1499000 <u>đ</u></td>                                                    
+                                                </tr>
+                                                <tr>
+                                                    <td><input type="checkbox"></td>
+                                                    <td>#120164</td>
+                                                    <td>04/01/2024</td>
+                                                    <td>Trần Thị Thùy Dung</td>
+                                                    <td>4</td>
+                                                    <td>COD</td>
+                                                    <td>Đang chuẩn bị</td>
+                                                    <td>1999000<u>đ</u></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><input type="checkbox"> </td>
+                                                    <td>#120115</td>
+                                                    <td>05/01/2024</td>
+                                                    <td>Phạm Trương Thu Đông</td>
+                                                    <td>5</td>
+                                                    <td>COD</td>
                                                     <td>Đã giao</td>
-                                                    <td>2.503.000đ</td>
-                                                    <td><a href="shop-cart.html" class="check-btn sqr-btn ">View</a>
-                                                    </td>
+                                                    <td>1000000 <u>đ</u></td>
                                                 </tr>
                                             </tbody>
                                         </table>
@@ -304,42 +321,106 @@
                             </div>
                             <div class="tab-pane" id="download" role="tabpanel" aria-labelledby="download-tab">
                                 <div class="myaccount-content">
-                                    <h3>Yêu thích</h3>
+                                    <Button class="bi bi-plus">Thêm Sản phẩm</Button>
                                     <div class="myaccount-table table-responsive text-center">
-
-                                        <table>
-                                            <thead>
+                                        <table class="table table-bordered" align="center">
+                                            <thead class="thead-light">
                                                 <tr>
-                                                    <th>Sản phẩm</th>
+                                                    <th>Mã Sản phẩm</th>
+                                                    <th>Loại sản phẩm</th>
+                                                    <th>Tên sản phẩm</th>
                                                     <th>Giá</th>
+                                                    <th>Hình ảnh</th>
                                                 </tr>
-
                                             </thead>
-                                            <tbody id="wishlist">
-
+                                            <tbody id="productTableBody">
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>Bánh mỳ</td>
+                                                    <td>Whitebap</td>
+                                                    <td>25000</td>
+                                                    <td><img src="/img/shop/Banhmi/white-bap.jpg" style="width: 50%;"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2</td>
+                                                    <td>Bánh mỳ</td>
+                                                    <td>Whitebun</td>
+                                                    <td>30000</td>
+                                                    <td><img src="/img/shop/Banhmi/white-bun.jpg" style="width: 50%;"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>3</td>
+                                                    <td>Bánh mỳ</td>
+                                                    <td>White Dinner Roll</td>
+                                                    <td>45000</td>
+                                                    <td><img src="/img/shop/Banhmi/white-dinner-roll.jpg" style="width: 50%;"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>4</td>
+                                                    <td>Bánh mỳ</td>
+                                                    <td>White Farmers Loaf</td>
+                                                    <td>40000</td>
+                                                    <td><img src="/img/shop/Banhmi/white-farmers-loaf.jpg" style="width: 50%;"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>5</td>
+                                                    <td>Bánh mỳ</td>
+                                                    <td>Misisipi Mud</td>
+                                                    <td>40000</td>
+                                                    <td><img src="/img/shop/Banhmi/white-flour-loaf.jpg" style="width: 50%;"></td>
+                                                </tr>  <!--Sản phẩm hiện thị tại đây-->
                                             </tbody>
                                         </table>
                                     </div>
                                 </div>
                             </div>
-                            <div class="tab-pane" id="payment-method" role="tabpanel" aria-labelledby="payment-method-tab">
-                                <div class="myaccount-content">
-                                    <h3>Phương thức thanh toán</h3>
-                                    <p>Bạn chưa lưu phương thức thanh toán nào!</p>
-
-                                </div>
-                            </div>
-                            <div class="tab-pane" id="address-edit" role="tabpanel" aria-labelledby="address-edit-tab">
-                                <div class="myaccount-content">
-                                    <h3>Địa chỉ giao hàng</h3>
-                                    <address>
-                                        <p><strong class="AccountName"></strong></p>
-                                        <p>Địa chỉ: Tô Vĩnh Diện, Đông Hoà, Dĩ An, Bình Dương <br>
-                                        <p>Số điện thoại: (123) 456-7890</p>
-                                    </address>
-                                    <a href="#/" class="check-btn sqr-btn"><i class="fa fa-edit"></i> Edit Address</a>
-                                </div>
-                            </div>
+                            <div class="tab-pane" id="blog" role="tabpanel" aria-labelledby="blog-tab">
+                                <Button class="bi bi-plus">Thêm Bài Viết</Button>
+                                <table class="table table-bordered" align="center">
+                                    <tr>
+                                        <th>&nbsp;</th>
+                                        <th>Tiêu đề</th>
+                                        <th>Ngày tạo</th>
+                                        <th>Nhãn</th>
+                                        <th>Người đăng</th>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox"></td>
+                                        <td>Cách làm bánh mỳ</td>
+                                        <td>30/12/2023</td>
+                                        <td>#banhmy</td>
+                                        <td>Hồ Lan Anh</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox"></td>
+                                        <td>Nên mua bánh nào?</td>
+                                        <td>31/12/2023</td>
+                                        <td>#banhmy#banhphuhop</td>
+                                        <td>Trần Thị Thùy Dung</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox"></td>
+                                        <td>Mua bánh dịp Haloween</td>
+                                        <td>241/10/2023</td>
+                                        <td>#banhmy#banhhaloween</td>
+                                        <td>Phạm Trương Thu Đông</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox"></td>
+                                        <td>Đồ ăn kèm bánh mỳ Pháp</td>
+                                        <td>1/1/2024</td>
+                                        <td>#banhmy#banhphuhop</td>
+                                        <td>Nguyễn Thị Mai Bình</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox"></td>
+                                        <td>Mua bánh làm quà tặng</td>
+                                        <td>31/12/2023</td>
+                                        <td>#banhmy#bantheomua</td>
+                                        <td>Nguyễn Thị Chung</td>
+                                    </tr>                              
+                                </table>
+                            </div>                            
                             <div class="tab-pane" id="account-info" role="tabpanel" aria-labelledby="account-info-tab">
                                 <div class="myaccount-content">
                                     <h3>Cập nhật thông tin</h3>
@@ -390,6 +471,7 @@
                             </div>
                         </div>
                     </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -402,47 +484,68 @@
         <div id="footer"></div>
     </footer>
     <!-- Footer Section End -->
-
+    <script>
+        // Tên tệp JSON
+        const jsonFileName = '/json/ProductCategory.json';
+        
+        // Lấy thẻ tbody của bảng
+        const tbody = document.getElementById('productTableBody');
+    
+        // Hàm để đọc tệp JSON và xử lý dữ liệu
+        function loadJSON(callback) {
+            const xhr = new XMLHttpRequest();
+            xhr.overrideMimeType("application/json");
+            xhr.open('GET', jsonFileName, true);
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState == 4 && xhr.status == 200) {
+                    callback(xhr.responseText);
+                }
+            };
+            xhr.send(null);
+        }
+    
+        // Hàm xử lý dữ liệu JSON
+        function processData(data) {
+            const products = JSON.parse(data);
+    
+            // Duyệt qua mảng sản phẩm và chèn thông tin vào bảng
+            products.forEach(product => {
+                // Tạo một dòng mới
+                const row = document.createElement('tr');
+    
+                // Chèn thông tin sản phẩm vào dòng
+                row.innerHTML = `
+                <tr>
+                    <td>${product.prid}</td>
+                    <td>${product.label}</td>
+                    <td>${product.name}</td>
+                    <td>${product.price}</td>
+                    <td><img src="${product.image}" alt="${product.name}" style="width: 50px; height: 50px;"></td>
+                </tr>
+                `;
+    
+                // Chèn dòng vào tbody
+                tbody.appendChild(row);
+            });
+        }
+    
+        // Gọi hàm để đọc và xử lý tệp JSON
+        document.addEventListener('DOMContentLoaded', loadJSON);
+    </script>
     <!-- Js Plugins -->
     <script src="../js/jquery-3.3.1.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
     <script src="../js/jquery.nice-select.min.js"></script>
-    <script src="../js/jquery.nicescroll.min.js"></script>
+    <script src="../js/jquery.barfiller.js"></script>
     <script src="../js/jquery.magnific-popup.min.js"></script>
-    <script src="../js/jquery.countdown.min.js"></script>
     <script src="../js/jquery.slicknav.js"></script>
-    <script src="../js/mixitup.min.js"></script>
     <script src="../js/owl.carousel.min.js"></script>
+    <script src="../js/jquery.nicescroll.min.js"></script>
     <script src="../js/main.js"></script>
-    <script src="../js/bootstrap.bundle.min.js"></script>
-   <!--
-    <script>
-        $(document).ready(function() {
-            var user = localStorage.getItem('account');
-            if (user != null) {
-                document.getElementById('dashboad').style.display = 'block';
-                var ele = document.getElementsByClassName('AccountName')
-                for (i = 0; i < ele.length; i++) {
-                    ele[i].innerHTML = user;
-                }
-            } else {
-                location.href = "user.html";
-            }
-        })
-        var cartTable = document.querySelector('#wishlist');
-        console.log(cartTable)
-        let item = ''
-            // const item = localStorage.getItem('product')
+    <script src="../js/specialProduct.js"></script>
+    <script src="../js/sanphamchitiet.js"></script>
+    <script src="/js/firebase.js"></script>
 
-        var cartItems = JSON.parse(localStorage.getItem('cart'))
-        for (let i = 0; i < cartItems.length; i++) {
-
-            item += '<tr class="item product__wishlist__item"><td class="product__wishlist__item"><div class="product__cart__item__pic"><img src="../img/product/' + cartItems[i].prImage + '" alt=""></div><div class="product__cart__item__text"><h6 class="title">' + cartItems[i].prName + '</h6></td><td><h5 class="productTotal">' + cartItems[i].prPrice + '</h5></div></td></tr>'
-        }
-        var currentHtml = cartTable.innerHTML;
-        currentHtml += item
-        cartTable.innerHTML = currentHtml
-    </script>
     <script>
         function openTab(evt, tabName) {
             var i, tabcontent, tablinks;
@@ -457,31 +560,30 @@
             document.getElementById(tabName).style.display = "block";
             evt.currentTarget.className += " active";
         }
-    </script>-->
-    <!-- <script> //Origin unread
-        const btnTabItem = document.querySelectorAll(".nav-link");
-        btnTabItem.forEach((btn) => {
-            btn.addEventListener("click", function() {
-                btnTabItem.forEach((btn) => {
-                    btn.classList.remove("active");
-                });
-                this.classList.add("active");
-            });
-        });
-    </script> -->
-    <!--<script type="module">
-        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js"; import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-analytics.js"; import { getDatabase, set, ref } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-database.js";
-        import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, updateProfile } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-auth.js"; const firebaseConfig = { apiKey: "AIzaSyAIwU6gd89NJnFH0sAJGzE1XwCv9wGPQXQ", authDomain:
-        "freshie-uel.firebaseapp.com", databaseURL: "https://freshie-uel-default-rtdb.firebaseio.com", projectId: "freshie-uel", storageBucket: "freshie-uel.appspot.com", messagingSenderId: "665183320448", appId: "1:665183320448:web:d35d7291577c7276d12965",
-        measurementId: "G-N5D0L2ST2N" }; const app = initializeApp(firebaseConfig); const analytics = getAnalytics(app); const database = getDatabase(app); const auth = getAuth(app); logout.addEventListener('click', (e) => { alert("Đã đăng xuất"), auth.signOut();
-        localStorage.removeItem('account'); localStorage.removeItem('cart'); window.location.href = "user.html"; })
-
-
-
-
-    </script>-->
-
-
+    </script>
+    
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js"; 
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-analytics.js"; 
+        import { getDatabase, set, ref } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-database.js";
+        import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, updateProfile } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-auth.js"; 
+        const firebaseConfig = { 
+            apiKey: "AIzaSyAIwU6gd89NJnFH0sAJGzE1XwCv9wGPQXQ", 
+            authDomain: "freshie-uel.firebaseapp.com", 
+            databaseURL: "https://freshie-uel-default-rtdb.firebaseio.com", 
+            projectId: "freshie-uel", storageBucket: "freshie-uel.appspot.com", 
+            messagingSenderId: "665183320448", 
+            appId: "1:665183320448:web:d35d7291577c7276d12965",
+            measurementId: "G-N5D0L2ST2N" 
+    }; 
+        const app = initializeApp(firebaseConfig); 
+        const analytics = getAnalytics(app); const database = getDatabase(app); 
+        const auth = getAuth(app); 
+        logout.addEventListener('click', (e) => { alert("Đã đăng xuất"), auth.signOut();
+        localStorage.removeItem('account'); 
+        localStorage.removeItem('cart'); 
+        window.location.href = "account.html"; })
+    </script>
+   
 </body>
-
 </html>

@@ -988,6 +988,7 @@ ol {
 }
 .map__iframe iframe {
   width: 100%;
+  height:fit-content
 }
 
 .map__inner {
