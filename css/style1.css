@@ -912,11 +912,69 @@ border-spacing: 20px;
 .cart__discount #nhap_ma,
 .cart__discount #btn_nhap_ma {
   height: 60px;
-  line-height: 60px; /* Đảm bảo văn bản ở giữa theo chiều cao */
+  line-height: 60px; 
   margin:0;
 }
 
 .cart__total h5{
   text-align: center;
 
+}
+
+/* hóa đơn  trang shopping cart  */
+#btn_nhap_ma {
+  background-color: #E09132;
+}
+
+.cart__total {
+  background: #f3f2ee;
+  padding: 35px 40px 40px;
+}
+
+.cart__total h5 {
+  color: #111111;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.cart__total ul {
+  margin-bottom: 25px;
+  font-size: 20px;
+}
+
+.cart__total ul li {
+  list-style: none;
+  font-size: 16px;
+  color: #444444;
+  line-height: 40px;
+  overflow: hidden;
+}
+
+.cart__total ul {
+  margin-bottom: 25px;
+}
+
+.cart__total ul li span {
+  font-weight: 700;
+  color: grey;
+  float: right;
+}
+
+.cart__total .primary-btn {
+  display: block;
+  padding: 12px 10px;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+.btn_order{
+  border: none;
+  outline: none;
+  background-color:#E09132;
+  text-align: right;
+  color: white;
+  padding: 15px;
+  font-weight: bolder;
 }
