@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
     const jsonFilePath = "/json/ProductCategory.json";
-    const productContainer = document.getElementById("productContainer");
+    const productContainer = document.getElementById("specialProduct");
 
     fetch(jsonFilePath)
     .then(response => response.json())
