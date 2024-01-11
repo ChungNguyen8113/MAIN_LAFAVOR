@@ -202,7 +202,7 @@
                                             <p class="shopping__cart__text">Các món đã chọn</p>
                                                 </div>
                                                     <div class="col-lg-6 d-flex justify-content-end">
-                                                        <a href="#" class="shopping__cart__button" id="changeMethod">Thêm món</a>
+                                                        <a href="Product.html" class="shopping__cart__button" id="changeMethod">Thêm món</a>
                                                     </div>
                                     </div>
                                 </div>
@@ -298,15 +298,21 @@
             // Hiển thị thành tiền và phí giao hàng
             const tongTienElement = document.getElementById('tong-tien');
             const phiGiaoHangElement = document.getElementById('phi-giao-hang');
+            const tongCongElement = document.getElementById('tong-cong');
     
-            tongTienElement.innerHTML = formatCurrency(thanhTien + phiGiaoHang);
+            tongTienElement.innerHTML = formatCurrency(thanhTien);
             phiGiaoHangElement.innerHTML = formatCurrency(phiGiaoHang);
+    
+            const tongCong = thanhTien + phiGiaoHang;
+            tongCongElement.innerHTML = formatCurrency(tongCong);
     
             function formatCurrency(amount) {
                 return new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(amount);
             }
         });
     </script>
+    
+    <script src="../js/cart.js"></script>
     <!-- Shopping-cart Section End -->
 
     <!--Navigation Footer Begin-->
