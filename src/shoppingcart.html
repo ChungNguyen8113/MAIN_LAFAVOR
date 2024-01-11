@@ -131,7 +131,7 @@
                     <h5>Tổng giỏ hàng</h5>
                     <ul>
                         <li>Tổng tiền hàng: <span class="cart__total_price"></span></li>
-                        <li>Phí vận chuyển: <span>Miễn phí</span></li>
+                        <li>Phí vận chuyển: <span>15000 <u>đ</u></span></li>
                         <li>Tổng thanh toán:<span class="cart__total_price_ship"></span></li>
                     </ul>
                     <div class="continue__btn update__btn">
@@ -242,7 +242,7 @@
 
         // Hiển thị tổng tiền hàng và tổng thanh toán
         totalCartPriceElement.textContent = formatCurrency(totalCartPrice) ;
-        totalCartPriceShipElement.textContent = formatCurrency(totalCartPrice) ;
+        totalCartPriceShipElement.textContent = formatCurrency(totalCartPrice + 15000) ;
     });
 
     // Hàm để định dạng số tiền sang định dạng tiền tệ
