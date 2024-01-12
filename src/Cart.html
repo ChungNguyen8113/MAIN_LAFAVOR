@@ -271,10 +271,13 @@
                 gioHang.forEach(function (sanPham) {
                     cartItemsContainer.innerHTML += `
                         <div class="row">
+                            <div class="col-lg-2">
+                                <img src="${sanPham.hinh}" alt="${sanPham.ten}" style="width: 50px; height: 50px; margin-left: 20px;">
+                            </div>
                             <div class="col-lg-4">
                                 <p>${sanPham.ten}</p>
                             </div>
-                            <div class="col-lg-4">
+                            <div class="col-lg-2">
                                 <p>${sanPham.gia}</p>
                             </div>
                             <div class="col-lg-4">
