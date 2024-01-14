@@ -52,7 +52,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     </div>
                         <div class="product__details__btn">
                             <a href="#" class="shop_btn" onclick="themVaoGioHang()">Thêm vào giỏ</a>
-                            <a href="#" class="shop_btn">Đặt hàng ngay</a>
+                            <a href="Cart.html" class="shop_btn" onclick="datHangNgay()">Đặt hàng ngay</a>
                         </div>
                         
                     </div>
@@ -168,6 +168,31 @@ function themVaoGioHang() {
 
     // Cập nhật số lượng trên giao diện
     document.getElementById('cart-number').innerText = gioHang.length;
+}
+
+function datHangNgay() {
+    // Lấy thông tin sản phẩm đã chọn
+    const hinhSanPham = document.getElementById('productDetailContainer').querySelector('.big_img').src;
+    const tenSanPham = document.getElementById('productDetailContainer').querySelector('h4').innerText;
+    const giaSanPham = parseFloat(document.querySelector('.money').innerText.replace(' VND', ''));
+    const soLuong = parseInt(document.getElementById('num').value);
+    const kichThuoc = document.querySelector('.options_size .selected') ? document.querySelector('.options_size .selected').value : '';
+    const loaiHat = document.querySelector('.options_topping .selected') ? document.querySelector('.options_topping .selected').value : '';
+
+    // Tạo đối tượng sản phẩm
+    var sanPham = {
+        hinh: hinhSanPham,
+        ten: tenSanPham,
+        gia: giaSanPham,
+        soLuong: soLuong,
+        kichThuoc: kichThuoc,
+        loaiHat: loaiHat
+    };
+
+    // Thêm sản phẩm vào mảng giỏ hàng
+    gioHang.push(sanPham);
+
+    localStorage.setItem('gioHang', JSON.stringify(gioHang));
 }
 
 
