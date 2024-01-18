@@ -191,7 +191,7 @@
                                             </thead>
                                             <tbody>
                                                 <tr>
-                                                    <td>DH11783H</td>
+                                                    <td>#120139</td>
                                                     <td>23/12/2022</td>
                                                     <td>Đang chuẩn bị</td>
                                                     <td>1.253.000đ</td>
@@ -199,7 +199,7 @@
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <td>DH11783H</td>
+                                                    <td>#120140</td>
                                                     <td>20/12/2022</td>
                                                     <td>Đang giao</td>
                                                     <td>800.000đ</td>
@@ -207,7 +207,7 @@
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <td>DH11783H</td>
+                                                    <td>#120141</td>
                                                     <td>23/12/2022</td>
                                                     <td>Đã giao</td>
                                                     <td>2.503.000đ</td>
@@ -303,14 +303,17 @@
 
     <!-- Js Plugins -->
     <script src="../js/jquery-3.3.1.min.js"></script>
-    <script src="../js/bootstrap.min.js"></script>
-    <script src="../js/jquery.nice-select.min.js"></script>
-    <script src="../js/jquery.barfiller.js"></script>
-    <script src="../js/jquery.magnific-popup.min.js"></script>
-    <script src="../js/jquery.slicknav.js"></script>
-    <script src="../js/owl.carousel.min.js"></script>
-    <script src="../js/jquery.nicescroll.min.js"></script>
-    <script src="../js/main.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/jquery.nice-select.min.js"></script>
+<script src="../js/jquery.barfiller.js"></script>
+<script src="../js/jquery.magnific-popup.min.js"></script>
+<script src="../js/jquery.slicknav.js"></script>
+<script src="../js/owl.carousel.min.js"></script>
+<script src="../js/jquery.nicescroll.min.js"></script>
+<script src="../js/main.js"></script>
+<script src="../js/specialProduct.js"></script>
+<script src="../js/sanphamchitiet.js"></script>
+<script src="/js/firebase.js"></script>
 
    
     <script>
@@ -343,19 +346,7 @@
                 location.href = "Account.html";
             }
         })
-        var cartTable = document.querySelector('#wishlist');
-        console.log(cartTable)
-        let item = ''
-            // const item = localStorage.getItem('product')
-
-        var cartItems = JSON.parse(localStorage.getItem('cart'))
-        for (let i = 0; i < cartItems.length; i++) {
-
-            item += '<tr class="item product__wishlist__item"><td class="product__wishlist__item"><div class="product__cart__item__pic"><img src="../img/product/' + cartItems[i].prImage + '" alt=""></div><div class="product__cart__item__text"><h6 class="title">' + cartItems[i].prName + '</h6></td><td><h5 class="productTotal">' + cartItems[i].prPrice + '</h5></div></td></tr>'
-        }
-        var currentHtml = cartTable.innerHTML;
-        currentHtml += item
-        cartTable.innerHTML = currentHtml
+        
     </script>
 
     <script>
@@ -395,10 +386,6 @@
         localStorage.removeItem('account'); 
         localStorage.removeItem('cart'); 
         window.location.href = "account.html"; })
-
-
-
-
     </script>
 
 

@@ -126,48 +126,7 @@
         <!---->
         
         <!-- Search bar Begin -->
-        <script>
-            var xmlHtttp = new XMLHttpRequest();
-            var url = '/json/Thongtinsanpham.json';
-            let myArr;
-            xmlHtttp.onreadystatechange = function() {
-                if (this.readyState == 4 && this.status == 200) {
-                    myArr = JSON.parse(this.responseText);
-                }
-            }
-            xmlHtttp.open("GET", url, true);
-            xmlHtttp.send();
-    
-            function selectElement(selector) {
-                return document.querySelector(selector);
-            }
-    
-            function clearResults() {
-                selectElement('.search-results').innerHTML = " ";
-    
-            }
-    
-            function getResults() {
-                const search = selectElement('.searchbar').value;
-                // console.log(search);
-                clearResults();
-    
-                if (search.length > 0) {
-                    for (let i = 0; i < myArr.length; i++) {
-                        if (myArr[i].prName.toLocaleLowerCase().includes(search.toLocaleLowerCase())) {
-                            selectElement('.search-results').innerHTML += '<div class="search-product" onClick=details(' + i + ')><div class="search-product-pic"><img src="/img/product/' + myArr[i].prImage + '"></div><div class="search-product-text"><h6>' + myArr[i].prName + '</h6><span>' + myArr[i].prPrice + ' đ</span></div></div>'
-                        }
-                    }
-                }
-            }
-            selectElement('.searchbar').addEventListener('keyup', getResults);
-    
-            function details(i) {
-                var sp = myArr[i];
-                localStorage.setItem("data", JSON.stringify(sp));
-                location.href = "Product.html";
-            }
-        </script>
+       
         <!--SearchBar End-->
 
 <!-- Js Plugins -->
@@ -180,5 +139,8 @@
 <script src="../js/owl.carousel.min.js"></script>
 <script src="../js/jquery.nicescroll.min.js"></script>
 <script src="../js/main.js"></script>
+<script src="../js/specialProduct.js"></script>
+<script src="../js/sanphamchitiet.js"></script>
+<script src="/js/firebase.js"></script>
 </body>
 </html>

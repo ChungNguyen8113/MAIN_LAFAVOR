@@ -85,7 +85,7 @@ function redirectToProductDetail(product) {
     localStorage.setItem("productDetail", JSON.stringify(product));
 
     // Chuyển hướng đến trang chi tiết sản phẩm
-    location.href = "ProductDetail.html";
+    location.href = "Productdetail.html";
 }
                 ;
                 return productItem;
